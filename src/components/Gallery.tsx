@@ -1,64 +1,70 @@
 import { Card } from "@/components/ui/card";
+import dryContainer from "@/assets/dry-container.jpg";
+import refrigerationContainer from "@/assets/refrigeration-container.jpg";
+import officeContainer from "@/assets/office-container.jpg";
+import accommodationContainer from "@/assets/accommodation-container.jpg";
+import commercialStalls from "@/assets/commercial-stalls.jpg";
+import heroContainers from "@/assets/hero-containers.jpg";
 
 const Gallery = () => {
   const galleryImages = [
     {
-      src: "/src/assets/dry-container.jpg",
+      src: dryContainer,
       alt: "20ft and 40ft dry storage shipping containers in Kenya",
       title: "Dry Storage Containers"
     },
     {
-      src: "/src/assets/refrigeration-container.jpg",
+      src: refrigerationContainer,
       alt: "Refrigerated container unit for cold storage in Nairobi",
       title: "Refrigeration Units"
     },
     {
-      src: "/src/assets/office-container.jpg",
+      src: officeContainer,
       alt: "Modern converted shipping container office space Kenya",
       title: "Container Offices"
     },
     {
-      src: "/src/assets/accommodation-container.jpg",
+      src: accommodationContainer,
       alt: "Shipping container accommodation units and living spaces",
       title: "Accommodation Containers"
     },
     {
-      src: "/src/assets/commercial-stalls.jpg",
+      src: commercialStalls,
       alt: "Commercial container stalls and retail kiosks Kenya",
       title: "Commercial Stalls"
     },
     {
-      src: "/src/assets/hero-containers.jpg",
+      src: heroContainers,
       alt: "Quality shipping containers yard Global Kenya Containers",
       title: "Container Yard"
     },
     {
-      src: "/src/assets/dry-container.jpg",
+      src: dryContainer,
       alt: "40ft High Cube container with extra height for tall cargo",
       title: "High Cube Containers"
     },
     {
-      src: "/src/assets/commercial-stalls.jpg",
+      src: commercialStalls,
       alt: "Customized container homes with modern finishes",
       title: "Container Homes"
     },
     {
-      src: "/src/assets/accommodation-container.jpg",
+      src: accommodationContainer,
       alt: "Ablution containers with sanitation facilities",
       title: "Sanitation Units"
     },
     {
-      src: "/src/assets/hero-containers.jpg",
+      src: heroContainers,
       alt: "Open-top containers for oversized cargo",
       title: "Open-top Containers"
     },
     {
-      src: "/src/assets/refrigeration-container.jpg",
+      src: refrigerationContainer,
       alt: "Tanktainers for liquid storage applications",
       title: "Tanktainers"
     },
     {
-      src: "/src/assets/office-container.jpg",
+      src: officeContainer,
       alt: "Customized container solutions for specific needs",
       title: "Custom Conversions"
     }
