@@ -3,8 +3,54 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const Contact = () => {
+  // Product options based on containerskenya.com
+  const productOptions = [
+    // Dry Shipping Containers
+    { value: "20ft-container-sale-hire", label: "20ft Container Sale/Hire" },
+    { value: "40ft-highcube-container-sale-hire", label: "40ft Highcube Container Sale/Hire" },
+    { value: "20ft-storage-container", label: "20ft Storage Container" },
+    { value: "40ft-storage-container", label: "40ft Storage Container" },
+    { value: "40ft-flat-rack", label: "40ft Flat Rack" },
+    { value: "20ft-open-top-container", label: "20ft Open Top Container" },
+    { value: "40ft-open-top-container", label: "40ft Open Top Container" },
+    
+    // Container Homes
+    { value: "20ft-bedsitter", label: "20ft Bedsitter" },
+    { value: "40ft-1-bedroom", label: "40ft 1 Bedroom" },
+    { value: "2-bedroom-container-house", label: "2 Bedroom Container House" },
+    { value: "3-bedroom-container-house", label: "3 Bedroom Container House" },
+    { value: "4-bedroom-container-house", label: "4 Bedroom Container House" },
+    
+    // Container Offices & Specialized
+    { value: "20ft-container-office", label: "20ft Container Office" },
+    { value: "40ft-container-office", label: "40ft Container Office" },
+    { value: "20ft-container-classroom", label: "20ft Container Classroom" },
+    { value: "40ft-container-classroom", label: "40ft Container Classroom" },
+    { value: "container-school", label: "Container School" },
+    { value: "container-display-unit", label: "Container Display Unit" },
+    { value: "20ft-laboratory-container", label: "20ft Laboratory Container" },
+    { value: "40ft-laboratory-container", label: "40ft Laboratory Container" },
+    { value: "20ft-container-clinic", label: "20ft Container Clinic" },
+    { value: "40ft-container-clinic", label: "40ft Container Clinic" },
+    
+    // Container Stalls
+    { value: "20ft-container-stalls-shops", label: "20ft Container Stalls/Shops" },
+    { value: "40ft-container-stalls-shops", label: "40ft Container Stalls/Shops" },
+    { value: "20ft-container-with-shelves", label: "20ft Container With Shelves" },
+    { value: "40ft-container-with-shelves", label: "40ft Container With Shelves" },
+    
+    // Refrigerated Containers
+    { value: "20ft-refrigerated-reefer-container-sale-hire", label: "20ft Refrigerated (Reefer) Container Sale/Hire" },
+    { value: "40ft-refrigerated-reefer-container-sale-hire", label: "40ft Refrigerated (Reefer) Container Sale/Hire" },
+    
+    // Specialized Containers
+    { value: "ablution-containers", label: "Ablution Containers" },
+    { value: "tanktainers", label: "Tanktainers" },
+  ];
+
   return (
     <section id="contact" className="py-16 lg:py-24 bg-muted/30" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4">
@@ -87,7 +133,23 @@ const Contact = () => {
                   <Input placeholder="Your Name" className="rounded-lg" aria-label="Your name" />
                   <Input type="email" placeholder="Your Email" className="rounded-lg" aria-label="Your email" />
                 </div>
-                <Input placeholder="Subject" className="rounded-lg" aria-label="Subject" />
+                
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <Input placeholder="Subject" className="rounded-lg" aria-label="Subject" />
+                  <Select name="product">
+                    <SelectTrigger className="w-full rounded-lg">
+                      <SelectValue placeholder="Select Product" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {productOptions.map((option) => (
+                        <SelectItem key={option.value} value={option.value}>
+                          {option.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+                
                 <Textarea placeholder="Your Message" rows={5} className="rounded-lg" aria-label="Your message" />
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg py-6 font-medium elevation-2 hover:elevation-3 transition-all">
                   Send Message
