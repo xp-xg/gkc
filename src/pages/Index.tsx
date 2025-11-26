@@ -2,9 +2,9 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, MapPin, CheckCircle, Home, Building, Store, Package, Users, Star, Clock, Shield } from "lucide-react";
-import ContainerImage from "@/assets/dry-container.jpg";
-import OfficeContainer from "@/assets/office-container.jpg";
-import AccommodationContainer from "@/assets/accommodation-container.jpg";
+import ButterflyImage from "@/assets/globalkenyacontainers_butterfly_.jpeg";
+import ContainerStalls from "@/assets/globalkenyacontainers_Container stalls3.jpeg";
+import OfficeContainer from "@/assets/globalkenyacontainers_40ft office.jpeg";
 import CommercialStalls from "@/assets/commercial-stalls.jpg";
 import RefrigerationContainer from "@/assets/refrigeration-container.jpg";
 import Footer from "@/components/Footer";
@@ -95,7 +95,7 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
                   <img 
-                    src={ContainerImage} 
+                    src={ButterflyImage} 
                     alt="High-quality shipping container Kenya" 
                     className="w-full h-60 object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -103,14 +103,14 @@ const Index = () => {
                 <div className="grid grid-rows-2 gap-4 mt-8">
                   <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
                     <img 
-                      src={OfficeContainer} 
+                      src={ContainerStalls} 
                       alt="Container office Kenya" 
                       className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
                     <img 
-                      src={AccommodationContainer} 
+                      src={OfficeContainer} 
                       alt="Container accommodation Kenya" 
                       className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                     />
@@ -176,7 +176,7 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Container Solutions</h2>
               <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
-                From storage to commercial spaces, our versatile container solutions meet diverse needs across Kenya
+                From homes to commercial spaces, our versatile container solutions meet diverse needs across Kenya
               </p>
             </div>
             
@@ -184,14 +184,14 @@ const Index = () => {
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src={ContainerImage} 
-                    alt="Dry storage containers Kenya" 
+                    src={ButterflyImage} 
+                    alt="Beautiful container houses Kenya" 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Storage Containers</h3>
-                  <p className="text-gray-600 mb-4">Secure, durable containers for all your storage needs.</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Beautiful Houses</h3>
+                  <p className="text-gray-600 mb-4">Comfortable, modern container homes for all your residential needs.</p>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -199,7 +199,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span>Weather-resistant design</span>
+                      <span>Insulated & finished interiors</span>
                     </li>
                   </ul>
                 </div>
@@ -232,7 +232,7 @@ const Index = () => {
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src={CommercialStalls} 
+                    src={ContainerStalls} 
                     alt="Commercial container stalls Kenya" 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />

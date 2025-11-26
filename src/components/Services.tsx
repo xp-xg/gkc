@@ -1,13 +1,16 @@
 import ServiceCard from "./ServiceCard";
-import dryContainer from "@/assets/dry-container.jpg";
-import commercialStalls from "@/assets/commercial-stalls.jpg";
-import refrigerationContainer from "@/assets/refrigeration-container.jpg";
-import officeContainer from "@/assets/office-container.jpg";
-import accommodationContainer from "@/assets/accommodation-container.jpg";
+import dryContainer from "@/assets/dry-container.jpg"; // Keep original image for DRY SHIPPING CONTAINERS
+import commercialStalls from "@/assets/globalkenyacontainers_Container stalls2.jpeg"; // Commercial stalls ending with 2
+import refrigerationContainer from "@/assets/globalkenyacontainers_Genset (reefer generator).jpeg"; // Refrigeration container image
+import officeContainer from "@/assets/globalkenyacontainers_40ft office2.jpeg"; // Office container image ending with 2
+import accommodationContainer from "@/assets/globalkenyacontainers_2 Bedroom House in 1x40ft2.jpeg"; // Accommodation container image ending with 2
+import ablutionContainer from "@/assets/globalkenyacontainers_20ft Kitchen2.jpeg"; // Ablution container image ending with 2 (kitchen facilities are similar to ablution facilities)
 import transportImage from "@/assets/global-kenya-containers-containers-offices-transport.jpg";
 import fabricationImage from "@/assets/global-kenya-containers-fabrication.jpg";
 import brandingImage from "@/assets/global-kenya-containers-stalls.jpg";
 import craneHandlingImage from "@/assets/global-kenya-containers-crane-handling-services.jpg";
+import reeferRepairImage from "@/assets/globalkenyacontainers_Reefer repair1.jpeg";
+import reeferPartsImage from "@/assets/globalkenyacontainers_Reefer Compressor.jpeg";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Package,
@@ -23,6 +26,7 @@ import {
   Ship,
   Grid3X3,
   ChevronRight,
+  WrenchIcon,
 } from "lucide-react";
 
 const Services = () => {
@@ -30,43 +34,57 @@ const Services = () => {
     {
       title: "DRY SHIPPING CONTAINERS",
       description:
-        "As the leading company in East and Central Africa, we specialize in selling and hiring 20ft and 40ft dry steel containers. Our containers are perfect for storage, transportation, and conversion projects. We provide both new and used 20ft and 40ft containers that meet international standards for durability and security. Whether you need 20ft containers for compact storage or 40ft containers for larger capacity, our dry freight containers are a cost-effective solution. Choose from our rental packages for short-term needs or purchase options for long-term requirements.",
+        "20ft and 40ft containers for storage, transportation and conversion projects. Available for hire or purchase.",
       image: dryContainer,
       alt: "20ft and 40ft dry shipping containers Kenya",
     },
     {
       title: "REFRIGERATED CONTAINERS (REEFER)",
       description:
-        "Our refrigeration containers provide temperature-controlled storage solutions for perishable goods. These specialized containers are perfect for cold storage applications in the food, pharmaceutical, and agricultural industries. With advanced cooling systems, these refrigerated containers maintain consistent temperatures for chilled and frozen items. We supply refrigeration containers across Kenya for static and mobile storage needs. Available for both hire and purchase to suit your project timeline and budget.",
+        "Temperature-controlled storage solutions for food, pharmaceuticals, and agricultural industries.",
       image: refrigerationContainer,
       alt: "Refrigerated container unit for cold storage Nairobi Kenya",
     },
     {
+      title: "REEFER REPAIR",
+      description:
+        "Professional repair services for refrigerated containers to keep your cold storage operations running smoothly.",
+      image: reeferRepairImage,
+      alt: "Professional reefer container repair services in Kenya",
+    },
+    {
+      title: "REEFER PARTS",
+      description:
+        "Genuine parts supply for refrigerated containers including compressors, condensers, and control systems.",
+      image: reeferPartsImage,
+      alt: "Genuine reefer container parts and compressor replacements Kenya",
+    },
+    {
       title: "CONTAINER HOMES",
       description:
-        "We offer value addition by converting dry units into comfortable residential living spaces. Our container homes are tailored to meet all accommodation needs, with proper insulation, electrical systems, plumbing, and modern interior finishes. Perfect for residential use, worker housing, or permanent homes, our container accommodation units include all the basic facilities of a modern home while being cost-effective and environmentally sustainable. We offer both purchase and rent-to-own options to make quality housing accessible.",
+        "Comfortable residential living spaces converted from shipping containers with proper insulation and fixtures.",
       image: accommodationContainer,
       alt: "Shipping container accommodation units and living spaces",
     },
     {
       title: "CONTAINER OFFICES",
       description:
-        "We specialize in converting dry units into functional office spaces, classrooms, clinics, and hospitals. Transform your workspace with our custom container office solutions. Our office container units are expertly converted to create modern, functional workspaces with proper ventilation, lighting, and electrical systems. Perfect for construction sites, remote locations, and temporary office needs. Flexible hire options available for short-term projects and permanent purchase options for long-term use.",
+        "Functional office spaces, classrooms, and clinics converted from shipping containers with proper ventilation.",
       image: officeContainer,
       alt: "Modern converted shipping container office space Kenya",
     },
     {
       title: "CONTAINER STALLS",
       description:
-        "Our commercial stalls and shops are expertly designed and fabricated to meet the needs of retailers and entrepreneurs across Kenya. These container-based shops offer security, durability, and a professional appearance at an affordable price. We specialize in partitioning containers into multiple stall units with steel doors and walls for maximum security. Our commercial stalls are ideal for markets, shopping centers, and business districts. Available for purchase or rental with flexible terms.",
+        "Commercial stalls and shops providing security, durability and professional appearance at an affordable price.",
       image: commercialStalls,
       alt: "Commercial container stalls and retail kiosks Kenya",
     },
     {
       title: "ABLUTION CONTAINERS",
       description:
-        "We convert dry units into specialized bathroom and toilet facilities. Our ablution containers provide clean, hygienic, and secure facilities for various applications including construction sites, events, and remote locations. These units can include multiple toilet stalls, shower areas, and wash stations, completely fabricated with proper plumbing and ventilation systems. Flexible hire options for temporary events and permanent purchase options for ongoing facilities.",
-      image: accommodationContainer,
+        "Specialized bathroom and toilet facilities for construction sites, events, and remote locations.",
+      image: ablutionContainer,
       alt: "Ablution containers for temporary facilities",
     },
   ];
@@ -287,7 +305,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
               <ServiceCard key={service.title} {...service} />
             ))}

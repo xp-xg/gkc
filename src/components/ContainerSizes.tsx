@@ -1,9 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-import dryContainer from "@/assets/dry-container.jpg";
-import refrigerationContainer from "@/assets/refrigeration-container.jpg";
-import accommodationContainer from "@/assets/accommodation-container.jpg";
-import officeContainer from "@/assets/office-container.jpg";
-import commercialStalls from "@/assets/commercial-stalls.jpg";
+import twentyFtContainer from "@/assets/globalkenyacontainers_20ft-dry-shipping-container.jpg";
+import fortyFtContainer from "@/assets/globalkenyacontainers_40ft-dry-shipping-containerlowcube.jpg";
+import highCubeContainer from "@/assets/globalkenyacontainers_40ft-high-cube-shipping-container.jpg";
+import refrigerationContainer from "@/assets/global-kenya-containers-reefer.jpg";
+import accommodationContainer from "@/assets/globalkenyacontainers_2 Bedroom House in 1x40ft.jpeg";
+import officeContainer from "@/assets/globalkenyacontainers_40ft office.jpeg";
+import commercialStalls from "@/assets/globalkenyacontainers_Container stalls.jpeg";
+import openTopContainer from "@/assets/globalkenyacontainers_Brand new container.jpeg";
+import ablutionContainer from "@/assets/globalkenyacontainers_20ft Container Ablution Block.jpeg";
 
 const ContainerSizes = () => {
   const containerTypes = [
@@ -11,21 +15,21 @@ const ContainerSizes = () => {
       title: "20 Feet (20 FT) Container",
       dimensions: "Length: 20' | Width: 8' | Height: 8'6\"",
       description: "The 20ft container is perfect for additional storage requirements and is the most versatile option for shipping containers in Kenya. This compact size can be delivered to almost any location and offers instant, secure space with minimal capital investment. Ideal for personal storage, small businesses, and as a foundation for container modifications. As the best container company in East Africa, Global Kenya Containers ensures all 20ft containers meet international standards for durability and security.",
-      image: dryContainer,
+      image: twentyFtContainer,
       alt: "20ft shipping container dimensions for storage and transport Kenya"
     },
     {
       title: "40 Feet (40 FT) Container",
       dimensions: "Length: 40' | Width: 8' | Height: 8'6\"",
       description: "The 40ft container offers significantly more space, being twice the length of a 20-foot container while sharing the same width and height dimensions. With approximately 76m³ of storage space, these containers require minimal site preparation and can be delivered to create an instant warehouse solution across Kenya. Perfect for larger storage needs, commercial applications, and conversion projects. Our shipping containers Kenya solutions include comprehensive delivery and placement services.",
-      image: dryContainer,
+      image: fortyFtContainer,
       alt: "40ft shipping container dimensions for large storage Kenya"
     },
     {
       title: "40 Feet High Cube Container",
       dimensions: "Length: 40' | Width: 8' | Height: 9'6\"",
       description: "The high cube container is about 1 foot taller than regular 40ft containers, allowing cargo to be loaded higher and providing additional storage capacity. This extra height makes it ideal for bulky or irregularly shaped items. These containers are perfect for projects requiring maximum storage efficiency and are ideal for container homes, offices, and commercial spaces throughout Kenya. Our team of Kenya container fabricators specializes in customizing high cube containers for specific applications.",
-      image: dryContainer,
+      image: highCubeContainer,
       alt: "40ft high cube shipping container dimensions for more storage"
     },
   ];
@@ -59,13 +63,13 @@ const ContainerSizes = () => {
     {
       title: "Open-top Containers",
       description: "Ideal for oversized cargo that cannot fit through standard container doors. These containers feature a removable tarpaulin cover instead of a fixed roof, allowing for easy loading of tall or bulky items from above. Perfect for construction materials, machinery, and other large items requiring easy access from the top.",
-      image: dryContainer,
+      image: openTopContainer,
       alt: "Open-top shipping container for oversized cargo"
     },
     {
       title: "Ablution Containers",
       description: "Sanitation facilities created from shipping containers, ideal for construction sites, events, and remote locations. These ablution containers include proper plumbing, ventilation, and modern fixtures to provide essential sanitation facilities. Our container fabrication services ensure these units meet all safety and hygiene standards across Kenya.",
-      image: accommodationContainer, // Using accommodation as it's more likely to have facilities
+      image: ablutionContainer,
       alt: "Ablution container with sanitation facilities Kenya"
     }
   ];
@@ -89,6 +93,40 @@ const ContainerSizes = () => {
             <p className="text-muted-foreground">
               From basic storage containers to fully customized spaces, our team of Kenya container fabricators transforms standard shipping containers into functional solutions tailored to your specific requirements. We serve clients in Nairobi, Mombasa, Kisumu, and throughout the country with our comprehensive range of container sizes and conversion services.
             </p>
+            
+            {/* Container Dimensions Table */}
+            <div className="overflow-x-auto my-8 rounded-lg border border-border shadow-sm">
+              <table className="min-w-full bg-card">
+                <thead className="bg-primary text-primary-foreground">
+                  <tr>
+                    <th scope="col" className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider w-1/4">Container Types</th>
+                    <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">20 Feet (20 FT)</th>
+                    <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">40 Feet (40 FT)</th>
+                    <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">40 Feet High Cube</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  <tr className="hover:bg-accent transition-colors">
+                    <td className="px-6 py-4 text-sm font-medium text-primary bg-muted">LENGTH</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">20 Feet (20')</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">40 Feet (40')</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">40 Feet (40')</td>
+                  </tr>
+                  <tr className="hover:bg-accent transition-colors">
+                    <td className="px-6 py-4 text-sm font-medium text-primary">WIDTH</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">8 Feet (8')</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">8 Feet (8')</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">8 Feet (8')</td>
+                  </tr>
+                  <tr className="hover:bg-accent transition-colors">
+                    <td className="px-6 py-4 text-sm font-medium text-primary bg-muted">HEIGHT</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">8.6 Feet (8' 6'')</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">8.6 Feet (8' 6'')</td>
+                    <td className="px-6 py-4 text-center text-sm text-foreground">9.6 Feet (9' 6'')</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
