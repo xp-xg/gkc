@@ -1,27 +1,91 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-containers.jpg";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import heroImage1 from "@/assets/hero-containers.jpg";
+import heroImage2 from "@/assets/globalkenyacontainers_butterfly_1.jpeg";
+import heroImage3 from "@/assets/globalkenyacontainers_40ft office.jpeg";
+import heroImage4 from "@/assets/globalkenyacontainers_Container stalls3.jpeg";
+import heroImage5 from "@/assets/globalkenyacontainers_40ft Container Clinic.jpeg";
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    {
+      image: heroImage1,
+      title: "Quality Shipping Containers Kenya",
+      description: "If you are looking to hire or buy quality shipping containers. Global Kenya Containers has a wide range of containers in various sizes to suit your needs.",
+      alt: "Global Kenya Containers shipping container yard"
+    },
+    {
+      image: heroImage2,
+      title: "Beautiful Container Homes",
+      description: "Transform your living space with our custom container homes. Durable, affordable, and environmentally sustainable housing solutions across Kenya.",
+      alt: "Modern container home in Kenya"
+    },
+    {
+      image: heroImage3,
+      title: "Professional Container Offices",
+      description: "Create functional workspace solutions with our converted container offices. Perfect for construction sites, remote locations, and temporary needs.",
+      alt: "Container office space in Kenya"
+    },
+    {
+      image: heroImage4,
+      title: "Commercial Container Stalls",
+      description: "Secure and durable retail solutions for entrepreneurs. Our container stalls offer professional appearance at an affordable price across Kenya.",
+      alt: "Commercial container stalls in Kenya"
+    },
+    {
+      image: heroImage5,
+      title: "Specialized Container Solutions",
+      description: "From clinics to classrooms, we convert containers into functional spaces for any purpose. Custom fabrication services available.",
+      alt: "Specialized container clinic in Kenya"
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  const goToPrevious = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
   return (
     <header className="relative h-[600px] lg:h-[700px] overflow-hidden">
-      {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-        role="img"
-        aria-label="Global Kenya Containers shipping container yard"
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+      {/* Background images carousel */}
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? "opacity-100 z-0" : "opacity-0 z-10"
+            }`}
+            style={{ backgroundImage: `url(${slide.image})` }}
+            role="img"
+            aria-label={slide.alt}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+          </div>
+        ))}
       </div>
 
       {/* Content */}
       <div className="relative container mx-auto px-4 h-full flex items-center">
         <div className="max-w-3xl text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Quality Shipping Containers Kenya
+            {slides[currentSlide].title}
           </h1>
           <p className="text-lg md:text-xl mb-8 text-white/90 font-light">
-            If you are looking to hire or buy quality shipping containers. Global Kenya Containers has a wide range of containers in various sizes to suit your needs.
+            {slides[currentSlide].description}
           </p>
           <Button 
             size="lg"
@@ -30,6 +94,37 @@ const Hero = () => {
             Get in touch
           </Button>
         </div>
+      </div>
+
+      {/* Navigation arrows */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+      
+      <button
+        onClick={goToNext}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
+        aria-label="Next slide"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+
+      {/* Slide indicators */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-colors ${
+              index === currentSlide ? "bg-white" : "bg-white/50"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </header>
   );
