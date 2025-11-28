@@ -10,6 +10,49 @@ interface GalleryImage {
   title: string;
 }
 
+const manualTitles: { [key: string]: string } = {
+  "accommodation-container": "Luxury Accommodation Units",
+  "commercial-stalls": "Versatile Commercial Stalls",
+  "dry-container": "Secure Dry Storage Containers",
+  "hero-containers": "Container Yard Display",
+  "office-container": "Modern Office Containers",
+  "refrigeration-container": "Refrigerated Container Solutions",
+  "globalkenyacontainers_1-bedroom-made-from-1x40ft": "1-Bedroom Container Home (40ft)",
+  "globalkenyacontainers_2-Bedroom-House-in-1x40ft": "2-Bedroom Container Home (40ft)",
+  "globalkenyacontainers_20ft-Container-Ablution-Block": "20ft Ablution Block",
+  "globalkenyacontainers_20ft-Kitchen": "20ft Container Kitchen",
+  "globalkenyacontainers_40ft-Container-Clinic": "40ft Container Clinic",
+  "globalkenyacontainers_40ft-office": "40ft Office Container",
+  "globalkenyacontainers_40ft-with-wooden-shelves": "40ft Container with Shelving",
+  "globalkenyacontainers_Brand-new-container": "Brand New Shipping Containers",
+  "globalkenyacontainers_butterfly_": "Custom Butterfly Container",
+  "globalkenyacontainers_Classrooms": "Container Classrooms",
+  "globalkenyacontainers_Container-club": "Custom Container Club",
+  "globalkenyacontainers_Container-stalls": "Retail Container Stalls",
+  "globalkenyacontainers_Dormitory": "Container Dormitory",
+  "globalkenyacontainers_Genset-(reefer-generator)": "Reefer Container Genset",
+  "globalkenyacontainers_Reefer-Compressor": "Reefer Container Compressor",
+  "globalkenyacontainers_Reefer-repair": "Reefer Container Repair Service",
+};
+
+const titleFromFilename = (filename: string): string => {
+  const manualTitle = Object.keys(manualTitles).find(key => filename.includes(key));
+  if (manualTitle) {
+    return manualTitles[manualTitle];
+  }
+
+  const cleaned = filename
+    .replace(/_/g, ' ')
+    .replace(/-/g, ' ')
+    .replace(/globalkenyacontainers/gi, '')
+    .replace(/global kenya containers/gi, '')
+    .replace(/\d+$/, '') // Remove numbers at the end
+    .trim();
+
+  // Convert to Title Case
+  return cleaned.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+};
+
 const Gallery = () => {
   const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([]);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -21,17 +64,12 @@ const Gallery = () => {
         Object.entries(imageModules).map(async ([path, importer]) => {
           const { default: src } = await importer() as { default: string };
           const filename = path.split('/').pop()?.split('.')[0] || '';
-          const title = filename
-            .replace(/_/g, ' ')
-            .replace(/-/g, ' ')
-            .replace(/globalkenyacontainers/g, '')
-            .replace(/global kenya containers/g, '')
-            .trim();
+          const title = titleFromFilename(filename);
           
           return {
             src,
             alt: `Image of ${title}`,
-            title: title.charAt(0).toUpperCase() + title.slice(1),
+            title,
           };
         })
       );
