@@ -1,12 +1,16 @@
 import Navbar from "@/components/Navbar";
 import Gallery from "@/components/Gallery";
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const GalleryPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Gallery />
+      <main className="flex-grow">
+        <Gallery />
+      </main>
+      <CTA />
       <Footer />
     </div>
   );

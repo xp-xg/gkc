@@ -1,12 +1,16 @@
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <About />
+      <main className="flex-grow">
+        <About />
+      </main>
+      <CTA />
       <Footer />
     </div>
   );

@@ -1,12 +1,16 @@
 import Navbar from "@/components/Navbar";
 import ContainerSizes from "@/components/ContainerSizes";
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const ContainerSizesPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <ContainerSizes />
+      <main className="flex-grow">
+        <ContainerSizes />
+      </main>
+      <CTA />
       <Footer />
     </div>
   );

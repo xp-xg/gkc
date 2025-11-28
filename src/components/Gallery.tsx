@@ -1,74 +1,66 @@
+import React, { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import dryContainer from "@/assets/dry-container.jpg";
-import refrigerationContainer from "@/assets/refrigeration-container.jpg";
-import officeContainer from "@/assets/office-container.jpg";
-import accommodationContainer from "@/assets/accommodation-container.jpg";
-import commercialStalls from "@/assets/commercial-stalls.jpg";
-import heroContainers from "@/assets/hero-containers.jpg";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+
+interface GalleryImage {
+  src: string;
+  alt: string;
+  title: string;
+}
 
 const Gallery = () => {
-  const galleryImages = [
-    {
-      src: dryContainer,
-      alt: "Premium dry storage shipping containers Kenya - 20ft and 40ft containers for storage and transport",
-      title: "Dry Storage Containers"
-    },
-    {
-      src: refrigerationContainer,
-      alt: "High-quality refrigerated container units for cold storage Kenya - Temperature controlled storage solutions",
-      title: "Refrigeration Units"
-    },
-    {
-      src: officeContainer,
-      alt: "Modern converted shipping container office spaces Kenya - Professional workspace solutions",
-      title: "Container Offices"
-    },
-    {
-      src: accommodationContainer,
-      alt: "Quality container accommodation units and living spaces Kenya - Comfortable container homes",
-      title: "Accommodation Containers"
-    },
-    {
-      src: commercialStalls,
-      alt: "Commercial container stalls and retail kiosks Kenya - Business setup solutions",
-      title: "Commercial Stalls"
-    },
-    {
-      src: heroContainers,
-      alt: "Quality shipping containers yard Global Kenya Containers - Container depot in Nairobi",
-      title: "Container Yard"
-    },
-    {
-      src: dryContainer,
-      alt: "40ft High Cube shipping containers with extra height Kenya - Additional storage capacity",
-      title: "High Cube Containers"
-    },
-    {
-      src: commercialStalls,
-      alt: "Customized container homes with modern finishes Kenya - Affordable housing solutions",
-      title: "Container Homes"
-    },
-    {
-      src: accommodationContainer,
-      alt: "Ablution containers with sanitation facilities Kenya - Mobile toilet and shower units",
-      title: "Sanitation Units"
-    },
-    {
-      src: heroContainers,
-      alt: "Open-top containers for oversized cargo Kenya - Easy loading container solutions",
-      title: "Open-top Containers"
-    },
-    {
-      src: refrigerationContainer,
-      alt: "Tanktainers for liquid storage applications Kenya - Specialized container solutions",
-      title: "Tanktainers"
-    },
-    {
-      src: officeContainer,
-      alt: "Customized container solutions for specific needs Kenya - Tailored fabrication services",
-      title: "Custom Conversions"
+  const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([]);
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      const imageModules = import.meta.glob('@/assets/*.{jpg,jpeg,png,svg}');
+      const images: GalleryImage[] = await Promise.all(
+        Object.entries(imageModules).map(async ([path, importer]) => {
+          const { default: src } = await importer() as { default: string };
+          const filename = path.split('/').pop()?.split('.')[0] || '';
+          const title = filename
+            .replace(/_/g, ' ')
+            .replace(/-/g, ' ')
+            .replace(/globalkenyacontainers/g, '')
+            .replace(/global kenya containers/g, '')
+            .trim();
+          
+          return {
+            src,
+            alt: `Image of ${title}`,
+            title: title.charAt(0).toUpperCase() + title.slice(1),
+          };
+        })
+      );
+      // Filter out logo
+      setGalleryImages(images.filter(image => image.title.toLowerCase() !== 'logo'));
+    };
+
+    fetchImages();
+  }, []);
+
+  const openLightbox = (index: number) => {
+    setSelectedImage(index);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
+  const goToNext = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage + 1) % galleryImages.length);
     }
-  ];
+  };
+
+  const goToPrevious = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage - 1 + galleryImages.length) % galleryImages.length);
+    }
+  };
 
   return (
     <section id="gallery" className="py-16 bg-background">
@@ -83,41 +75,69 @@ const Gallery = () => {
           </p>
         </header>
         
-        <div className="space-y-12 max-w-5xl mx-auto">
-          <div>
-            <h3 className="text-xl font-medium text-foreground mb-4">Premium Container Solutions</h3>
-            <p className="text-muted-foreground mb-6">
-              At Global Kenya Containers, the best container company in East Africa, we offer a comprehensive selection of high-quality shipping containers for every application. Our gallery showcases the diverse range of container solutions we provide, from standard dry storage containers to highly customized spaces. Each container is carefully selected and maintained to meet international standards for durability and security.
-            </p>
-            <p className="text-muted-foreground">
-              Our container fabrication services transform standard shipping containers into functional spaces that meet the specific needs of our clients across Kenya. Whether you require storage containers, office spaces, accommodation units, or commercial stalls, our team of Kenya container fabricators ensures each project meets the highest standards of quality and functionality.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image, index) => (
-              <Card 
-                key={index}
-                className="overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group rounded-lg"
-              >
-                <article className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <h3 className="text-white font-medium text-lg">{image.title}</h3>
-                    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {galleryImages.map((image, index) => (
+            <Card 
+              key={index}
+              className="overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group rounded-lg"
+              onClick={() => openLightbox(index)}
+            >
+              <article className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-white font-semibold text-base md:text-lg leading-tight">{image.title}</h3>
                   </div>
-                </article>
-              </Card>
-            ))}
-          </div>
+                </div>
+              </article>
+            </Card>
+          ))}
         </div>
       </div>
+
+      {selectedImage !== null && (
+        <Dialog open onOpenChange={closeLightbox}>
+          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-0 flex items-center justify-center">
+            <div className="relative w-full h-full">
+                <img
+                    src={galleryImages[selectedImage].src}
+                    alt={galleryImages[selectedImage].alt}
+                    className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                />
+                <p className="text-white text-center mt-2 text-lg bg-black bg-opacity-50 rounded-b-lg py-2">{galleryImages[selectedImage].title}</p>
+                 <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute top-2 right-2 text-white bg-black/50 hover:bg-black/75 hover:text-white rounded-full h-10 w-10"
+                    onClick={closeLightbox}
+                >
+                    <X className="h-6 w-6" />
+                </Button>
+                <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 text-white bg-black/50 hover:bg-black/75 hover:text-white rounded-full h-12 w-12"
+                    onClick={goToPrevious}
+                >
+                    <ChevronLeft className="h-8 w-8" />
+                </Button>
+                <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-white bg-black/50 hover:bg-black/75 hover:text-white rounded-full h-12 w-12"
+                    onClick={goToNext}
+                >
+                    <ChevronRight className="h-8 w-8" />
+                </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
     </section>
   );
 };

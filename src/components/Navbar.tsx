@@ -27,11 +27,24 @@ const Navbar = () => {
             <span>National Park East Gate Road, Off Mombasa Road, Nairobi</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+254716068548" className="flex items-center gap-1 hover:opacity-80">
+            <a
+              href="tel:+254721804377"
+              className="flex items-center gap-1 hover:opacity-80"
+            >
               <Phone className="w-4 h-4" />
               <span>+254716068548</span>
             </a>
-            <a href="mailto:info@globalkenyacontainers.com" className="flex items-center gap-1 hover:opacity-80">
+            <a
+              href="tel:+254716068548"
+              className="flex items-center gap-1 hover:opacity-80"
+            >
+              <Phone className="w-4 h-4" />
+              <span>+254724770653</span>
+            </a>
+            <a
+              href="mailto:info@globalkenyacontainers.com"
+              className="flex items-center gap-1 hover:opacity-80"
+            >
               <Mail className="w-4 h-4" />
               <span>info@globalkenyacontainers.com</span>
             </a>
@@ -46,11 +59,14 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-primary elevation-2 rounded-lg flex items-center justify-center">
-                <div className="text-primary-foreground font-bold text-xl">GKC</div>
+                <div className="text-primary-foreground font-bold text-xl">
+                  GKC
+                </div>
               </div>
               <div>
                 <h1 className="text-xl font-medium">
-                  Global Kenya <span className="text-primary font-semibold">Containers</span>
+                  Global Kenya{" "}
+                  <span className="text-primary font-semibold">Containers</span>
                 </h1>
               </div>
             </div>
@@ -78,7 +94,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
 
