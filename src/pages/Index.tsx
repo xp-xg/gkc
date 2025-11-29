@@ -7,6 +7,9 @@ import ContainerStalls from "@/assets/globalkenyacontainers_Container stalls3.jp
 import OfficeContainer from "@/assets/globalkenyacontainers_40ft office.jpeg";
 import CommercialStalls from "@/assets/commercial-stalls.jpg";
 import RefrigerationContainer from "@/assets/refrigeration-container.jpg";
+import ReeferImage from "@/assets/global-kenya-containers-reefer.jpg";
+import TransportImage from "@/assets/global-kenya-containers-containers-offices-transport.jpg";
+import FabricationImage from "@/assets/global-kenya-containers-fabrication.jpg";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -249,6 +252,78 @@ const Index = () => {
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Attractive design options</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={ReeferImage} 
+                    alt="Reefer containers Kenya" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Reefer Containers</h3>
+                  <p className="text-gray-600 mb-4">Temperature-controlled solutions for perishable goods.</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span>Reliable cooling systems</span>
+                    </li>
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span>24/7 monitoring</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={TransportImage} 
+                    alt="Container transport Kenya" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Container Transport</h3>
+                  <p className="text-gray-600 mb-4">Reliable and efficient container transport services.</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span>Nationwide coverage</span>
+                    </li>
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span>Experienced drivers</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={FabricationImage} 
+                    alt="Container fabrication Kenya" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Container Fabrication</h3>
+                  <p className="text-gray-600 mb-4">Custom container modifications to your specifications.</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span>Skilled fabricators</span>
+                    </li>
+                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span>Quality materials</span>
                     </li>
                   </ul>
                 </div>

@@ -58,11 +58,13 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-primary elevation-2 rounded-lg flex items-center justify-center">
-                <div className="text-primary-foreground font-bold text-xl">
-                  GKC
-                </div>
-              </div>
+              <Link to="/">
+                <img
+                  src="/Global kenya containers logo.png"
+                  alt="Global Kenya Containers Logo"
+                  className="w-16 h-16 object-contain"
+                />
+              </Link>
               <div>
                 <h1 className="text-xl font-medium">
                   Global Kenya{" "}
