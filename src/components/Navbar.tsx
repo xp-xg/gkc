@@ -62,7 +62,7 @@ const Navbar = () => {
                 <img
                   src="/Global kenya containers logo.png"
                   alt="Global Kenya Containers Logo"
-                  className="w-20 h-20 object-contain"
+                  className="w-24 h-24 object-contain"
                 />
               </Link>
               <div>
