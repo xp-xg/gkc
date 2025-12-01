@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage1 from "@/assets/hero-containers.jpg";
 import heroImage2 from "@/assets/globalkenyacontainers_butterfly_1.jpeg";
 import heroImage3 from "@/assets/globalkenyacontainers_40ft office.jpeg";
@@ -92,7 +93,7 @@ const Hero = () => {
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
             asChild
           >
-            <a href="/contact">Get in touch</a>
+            <Link to="/contact">Get in touch</Link>
           </Button>
         </div>
       </div>
