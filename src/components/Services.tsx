@@ -174,18 +174,18 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-16 lg:py-24 bg-muted/30"
+      className="py-8 sm:py-16 bg-muted/30"
       aria-labelledby="services-heading"
     >
       <div className="container mx-auto px-4">
-        <header className="text-center mb-12">
+        <header className="text-center mb-8 sm:mb-12">
           <h2
             id="services-heading"
-            className="text-3xl lg:text-4xl font-medium mb-4"
+            className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-4"
           >
             Our Container Services
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto font-light">
+          <p className="text-muted-foreground max-w-2xl mx-auto font-light text-sm sm:text-base">
             Comprehensive container solutions including dry steel shipping
             containers(20ft and 40ft), refrigerated units, container homes,
             offices, stalls, and specialized applications - available for hire
@@ -193,12 +193,12 @@ const Services = () => {
           </p>
         </header>
 
-        <div className="space-y-12 max-w-4xl mx-auto">
+        <div className="space-y-8 sm:space-y-12 max-w-4xl mx-auto">
           <div>
-            <h3 className="text-xl font-medium text-foreground mb-4">
+            <h3 className="text-lg sm:text-xl font-medium text-foreground mb-4">
               Leading Container Specialists in East Africa
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground text-sm sm:text-base mb-4">
               We are the leading company in East and Central Africa that
               specializes in selling and hiring containers, both Dry Steel and
               Refrigerated (Reefer) of all sizes. Our team of expert fabricators
@@ -206,7 +206,7 @@ const Services = () => {
               client might need - from offices and classrooms to clinics,
               hospitals, and shops/stalls.
             </p>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-sm sm:text-base">
               From initial consultation to final delivery and installation, we
               handle every aspect of your container project. Our expertise in
               shipping container applications includes structural modifications,
@@ -219,40 +219,40 @@ const Services = () => {
           </div>
 
           {/* Additional Services Section */}
-          <div className="mt-10">
-            <div className="text-center mb-10">
-              <h3 className="text-2xl lg:text-3xl font-medium mb-4">
+          <div className="mt-8 sm:mt-10">
+            <div className="text-center mb-8 sm:mb-10">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-medium mb-4">
                 Additional Services
               </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
                 Beyond our core container solutions, we offer a range of
                 additional services to meet your specific needs
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {additionalServices.map((service, index) => (
                 <Card
                   key={index}
                   className="elevation-2 rounded-lg overflow-hidden hover:elevation-4 transition-all duration-300 flex flex-col"
                 >
                   <div className="overflow-hidden">
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
-                      className="w-full h-40 object-cover"
+                      className="w-full h-24 sm:h-40 object-cover"
                     />
                   </div>
-                  <CardContent className="p-4 flex-1 flex flex-col">
-                    <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <CardContent className="p-3 sm:p-4 flex-1 flex flex-col">
+                    <div className="flex items-start gap-2 sm:gap-3">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                         {service.icon}
                       </div>
                       <div className="flex-1">
-                        <h4 className="font-semibold text-lg mb-2">
+                        <h4 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">
                           {service.title}
                         </h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-xs sm:text-sm text-muted-foreground">
                           {service.description}
                         </p>
                       </div>
@@ -264,37 +264,37 @@ const Services = () => {
           </div>
 
           {/* All Products Section */}
-          <div className="mt-10">
-            <div className="text-center mb-10">
-              <h3 className="text-2xl lg:text-3xl font-medium mb-4">
+          <div className="mt-8 sm:mt-10">
+            <div className="text-center mb-8 sm:mb-10">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-medium mb-4">
                 Complete Container Product Range
               </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
                 Explore our comprehensive selection of container solutions, each
                 customizable to meet your specific needs
               </p>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               {Object.entries(containerProducts).map(([category, products]) => (
                 <div
                   key={category}
-                  className="bg-white rounded-xl p-6 elevation-2"
+                  className="bg-white rounded-xl p-4 sm:p-6 elevation-2"
                 >
-                  <div className="flex items-center gap-3 mb-6">
-                    <Grid3X3 className="w-6 h-6 text-primary" />
-                    <h4 className="text-xl font-semibold text-foreground">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                    <Grid3X3 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                    <h4 className="text-lg sm:text-xl font-semibold text-foreground">
                       {category}
                     </h4>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
                     {products.map((product, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-2 p-3 rounded-lg border hover:bg-primary/5 transition-colors"
+                        className="flex items-center gap-2 p-2 sm:p-3 rounded-lg border hover:bg-primary/5 transition-colors"
                       >
-                        <ChevronRight className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">
+                        <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
+                        <span className="text-xs sm:text-sm text-muted-foreground">
                           {product}
                         </span>
                       </div>
@@ -305,7 +305,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {services.map((service) => (
               <ServiceCard key={service.title} {...service} />
             ))}

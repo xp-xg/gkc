@@ -12,111 +12,130 @@ import TransportImage from "@/assets/global-kenya-containers-containers-offices-
 import FabricationImage from "@/assets/global-kenya-containers-fabrication.jpg";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Global Kenya Containers - Quality Shipping Containers Kenya</title>
+        <meta name="description" content="Find high-quality new and used shipping containers for sale in Kenya. Global Kenya Containers offers professional container conversion services for homes, offices, and commercial stalls in Nairobi, Mombasa, and across the country." />
+        <meta name="keywords" content="shipping containers Kenya, storage containers Nairobi, container offices, refrigerated containers, accommodation containers, commercial stalls Kenya, shipping containers for sale, container conversion" />
+        <link rel="canonical" href="https://globalkenyacontainers.com/" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Global Kenya Containers - Quality Shipping Containers Kenya" />
+        <meta property="og:description" content="Find high-quality new and used shipping containers for sale in Kenya. Global Kenya Containers offers professional container conversion services for homes, offices, and commercial stalls in Nairobi, Mombasa, and across the country." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://globalkenyacontainers.com/" />
+        <meta property="og:image" content="/Global kenya containers logo.png" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Global Kenya Containers - Quality Shipping Containers" />
+        <meta name="twitter:description" content="Find high-quality new and used shipping containers for sale in Kenya. Global Kenya Containers offers professional container conversion services for homes, offices, and commercial stalls in Nairobi, Mombasa, and across the country." />
+      </Helmet>
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        
+
         {/* Stats Section - Visually Stunning */}
-        <section className="py-12 bg-gradient-to-r from-primary to-primary/80 text-white">
+        <section className="py-8 sm:py-12 bg-gradient-to-r from-primary to-primary/80 text-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
-                <div className="text-3xl font-bold mb-1">5000+</div>
-                <div className="text-sm opacity-90">Containers Delivered</div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 text-center">
+              <div className="p-3 sm:p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">5000+</div>
+                <div className="text-xs sm:text-sm opacity-90">Containers Delivered</div>
               </div>
-              <div className="p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
-                <div className="text-3xl font-bold mb-1">500+</div>
-                <div className="text-sm opacity-90">Happy Clients</div>
+              <div className="p-3 sm:p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">500+</div>
+                <div className="text-xs sm:text-sm opacity-90">Happy Clients</div>
               </div>
-              <div className="p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
-                <div className="text-3xl font-bold mb-1">20+</div>
-                <div className="text-sm opacity-90">Years Experience</div>
+              <div className="p-3 sm:p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">20+</div>
+                <div className="text-xs sm:text-sm opacity-90">Years Experience</div>
               </div>
-              <div className="p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
-                <div className="text-3xl font-bold mb-1">24/7</div>
-                <div className="text-sm opacity-90">Support Available</div>
+              <div className="p-3 sm:p-4 elevation-2 rounded-xl bg-white/10 backdrop-blur-sm">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">24/7</div>
+                <div className="text-xs sm:text-sm opacity-90">Support Available</div>
               </div>
             </div>
           </div>
         </section>
-        
+
         {/* Why Choose Us Section */}
-        <section className="py-16 lg:py-20 bg-white">
+        <section className="py-12 sm:py-16 lg:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Why Choose Global Kenya Containers</h2>
-              <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">Why Choose Global Kenya Containers</h2>
+              <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
                 As the best container people in all works containers, we transform quality shipping containers into innovative solutions for residential and commercial spaces across Kenya.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-6 h-6 text-primary" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+              <div className="space-y-6 sm:space-y-8">
+                <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Premium Quality Containers</h3>
-                    <p className="text-gray-600">
-                      Our shipping containers are sourced from top manufacturers worldwide, ensuring durability and reliability for all your projects. 
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Premium Quality Containers</h3>
+                    <p className="text-sm sm:text-base text-gray-600">
+                      Our shipping containers are sourced from top manufacturers worldwide, ensuring durability and reliability for all your projects.
                       We offer new and used containers that meet international standards for strength and safety.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Package className="w-6 h-6 text-primary" />
+                <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Package className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert Container Solutions</h3>
-                    <p className="text-gray-600">
-                      Containers have evolved beyond their original purpose of transporting goods and are now being creatively repurposed as innovative solutions for both residential and commercial spaces. 
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Expert Container Solutions</h3>
+                    <p className="text-sm sm:text-base text-gray-600">
+                      Containers have evolved beyond their original purpose of transporting goods and are now being creatively repurposed as innovative solutions for both residential and commercial spaces.
                       At Global Kenya Containers, we understand this transformation and provide containers that can be customized to include all the comforts of traditional spaces while reducing environmental footprint.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Users className="w-6 h-6 text-primary" />
+                <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Users className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Professional Container Fabrication</h3>
-                    <p className="text-gray-600">
-                      Our skilled team of Kenya container fabricators possess the expertise to cut, weld, insulate, and finish containers to meet your specific requirements. 
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Professional Container Fabrication</h3>
+                    <p className="text-sm sm:text-base text-gray-600">
+                      Our skilled team of Kenya container fabricators possess the expertise to cut, weld, insulate, and finish containers to meet your specific requirements.
                       From installing windows and doors to electrical and plumbing work, we turn these industrial vessels into comfortable living spaces or functional retail outlets.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
-                  <img 
-                    src={ButterflyImage} 
-                    alt="High-quality shipping container Kenya" 
-                    className="w-full h-60 object-cover hover:scale-105 transition-transform duration-500"
+                  <img
+                    src={ButterflyImage}
+                    alt="High-quality shipping container Kenya"
+                    className="w-full h-48 sm:h-60 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="grid grid-rows-2 gap-4 mt-8">
+                <div className="grid grid-rows-2 gap-4 mt-4 sm:mt-8">
                   <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
-                    <img 
-                      src={ContainerStalls} 
-                      alt="Container office Kenya" 
-                      className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
+                    <img
+                      src={ContainerStalls}
+                      alt="Container office Kenya"
+                      className="w-full h-24 sm:h-32 object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
-                    <img 
-                      src={OfficeContainer} 
-                      alt="Container accommodation Kenya" 
-                      className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
+                    <img
+                      src={OfficeContainer}
+                      alt="Container accommodation Kenya"
+                      className="w-full h-24 sm:h-32 object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 </div>
@@ -124,49 +143,49 @@ const Index = () => {
             </div>
 
             {/* Enhanced Stats Section */}
-            <div className="mt-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-10 elevation-3">
+            <div className="mt-12 sm:mt-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-6 sm:p-8 elevation-3">
               <div className="max-w-4xl mx-auto">
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Innovative Container Solutions Across Kenya</h3>
-                    <p className="text-gray-700 mb-6">
-                      These sturdy steel structures have gained immense popularity as affordable and sustainable options for homes and shops. 
-                      With their modular design and ease of transport, containers can be easily transformed into cozy Container Houses or functional retail spaces. 
+                <div className="flex flex-col gap-8">
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Innovative Container Solutions Across Kenya</h3>
+                    <p className="text-sm sm:text-base text-gray-700 mb-6">
+                      These sturdy steel structures have gained immense popularity as affordable and sustainable options for homes and shops.
+                      With their modular design and ease of transport, containers can be easily transformed into cozy Container Houses or functional retail spaces.
                       At Global Kenya Containers, we play a pivotal role in this transformation, helping homeowners and entrepreneurs capitalize on the mobility and distinctive aesthetic appeal of containers.
                     </p>
-                    
+
                     {/* Services Overview */}
-                    <div className="grid grid-cols-2 gap-4 mt-6">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-6">
                       <div className="flex items-center gap-2">
-                        <Home className="w-5 h-5 text-primary" />
-                        <span className="text-sm">Container Homes</span>
+                        <Home className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                        <span className="text-xs sm:text-sm">Container Homes</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Building className="w-5 h-5 text-primary" />
-                        <span className="text-sm">Office Units</span>
+                        <Building className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                        <span className="text-xs sm:text-sm">Office Units</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Store className="w-5 h-5 text-primary" />
-                        <span className="text-sm">Commercial Stalls</span>
+                        <Store className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                        <span className="text-xs sm:text-sm">Commercial Stalls</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Package className="w-5 h-5 text-primary" />
-                        <span className="text-sm">Storage Solutions</span>
+                        <Package className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                        <span className="text-xs sm:text-sm">Storage Solutions</span>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex flex-col items-center text-center">
-                    <div className="text-5xl font-bold text-primary mb-2">20+</div>
-                    <div className="text-gray-600 font-medium">Years of Excellence</div>
+                    <div className="text-4xl sm:text-5xl font-bold text-primary mb-2">20+</div>
+                    <div className="text-sm sm:text-base text-gray-600 font-medium">Years of Excellence</div>
                     <div className="flex items-center gap-1 mt-2 text-yellow-500">
-                      <Star className="w-5 h-5 fill-current" />
-                      <Star className="w-5 h-5 fill-current" />
-                      <Star className="w-5 h-5 fill-current" />
-                      <Star className="w-5 h-5 fill-current" />
-                      <Star className="w-5 h-5 fill-current" />
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+                      <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
                     </div>
-                    <div className="text-sm text-gray-600 mt-1">Customer Satisfaction</div>
+                    <div className="text-xs sm:text-sm text-gray-600 mt-1">Customer Satisfaction</div>
                   </div>
                 </div>
               </div>
@@ -175,81 +194,81 @@ const Index = () => {
         </section>
 
         {/* Services Preview Section */}
-        <section className="py-16 lg:py-20 bg-gray-50">
+        <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Container Solutions</h2>
-              <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Container Solutions</h2>
+              <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
                 From homes to commercial spaces, our versatile container solutions meet diverse needs across Kenya
               </p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={ButterflyImage} 
-                    alt="Beautiful container houses Kenya" 
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={ButterflyImage}
+                    alt="Beautiful container houses Kenya"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Beautiful Houses</h3>
-                  <p className="text-gray-600 mb-4">Comfortable, modern container homes for all your residential needs.</p>
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Beautiful Houses</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">Comfortable, modern container homes for all your residential needs.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>20ft, 40ft, High Cube options</span>
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Insulated & finished interiors</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={OfficeContainer} 
-                    alt="Container office Kenya" 
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={OfficeContainer}
+                    alt="Container office Kenya"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Container Offices</h3>
-                  <p className="text-gray-600 mb-4">Professional workspace solutions for any location.</p>
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Container Offices</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">Professional workspace solutions for any location.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Customizable interiors</span>
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Fast deployment</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={ContainerStalls} 
-                    alt="Commercial container stalls Kenya" 
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={ContainerStalls}
+                    alt="Commercial container stalls Kenya"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Commercial Stalls</h3>
-                  <p className="text-gray-600 mb-4">Retail and business solutions for entrepreneurs.</p>
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Commercial Stalls</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">Retail and business solutions for entrepreneurs.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Secure & durable construction</span>
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Attractive design options</span>
                     </li>
@@ -258,22 +277,22 @@ const Index = () => {
               </div>
 
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={ReeferImage} 
-                    alt="Reefer containers Kenya" 
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={ReeferImage}
+                    alt="Reefer containers Kenya"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Reefer Containers</h3>
-                  <p className="text-gray-600 mb-4">Temperature-controlled solutions for perishable goods.</p>
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Reefer Containers</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">Temperature-controlled solutions for perishable goods.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Reliable cooling systems</span>
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>24/7 monitoring</span>
                     </li>
@@ -282,22 +301,22 @@ const Index = () => {
               </div>
 
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={TransportImage} 
-                    alt="Container transport Kenya" 
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={TransportImage}
+                    alt="Container transport Kenya"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Container Transport</h3>
-                  <p className="text-gray-600 mb-4">Reliable and efficient container transport services.</p>
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Container Transport</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">Reliable and efficient container transport services.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Nationwide coverage</span>
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Experienced drivers</span>
                     </li>
@@ -306,22 +325,22 @@ const Index = () => {
               </div>
 
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={FabricationImage} 
-                    alt="Container fabrication Kenya" 
+                <div className="h-40 sm:h-48 overflow-hidden">
+                  <img
+                    src={FabricationImage}
+                    alt="Container fabrication Kenya"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Container Fabrication</h3>
-                  <p className="text-gray-600 mb-4">Custom container modifications to your specifications.</p>
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Container Fabrication</h3>
+                  <p className="text-sm sm:text-base text-gray-600 mb-4">Custom container modifications to your specifications.</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Skilled fabricators</span>
                     </li>
-                    <li className="flex items-center gap-2 text-sm text-gray-600">
+                    <li className="flex items-center gap-2 text-xs sm:text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span>Quality materials</span>
                     </li>

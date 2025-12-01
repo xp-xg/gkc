@@ -9,7 +9,7 @@ import heroImage5 from "@/assets/globalkenyacontainers_40ft Container Clinic.jpe
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
     {
       image: heroImage1,
@@ -60,7 +60,7 @@ const Hero = () => {
   };
 
   return (
-    <header className="relative h-[600px] lg:h-[700px] overflow-hidden">
+    <header className="relative h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px] overflow-hidden">
       {/* Background images carousel */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -80,16 +80,16 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative container mx-auto px-4 h-full flex items-center">
-        <div className="max-w-3xl text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <div className="max-w-full sm:max-w-lg md:max-w-2xl text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-lg md:text-xl mb-8 text-white/90 font-light">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 font-light">
             {slides[currentSlide].description}
           </p>
-          <Button 
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-8 py-6 elevation-3 hover:elevation-4 transition-all rounded-lg"
+          <Button
+            size="default"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
           >
             Get in touch
           </Button>
@@ -99,27 +99,27 @@ const Hero = () => {
       {/* Navigation arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
+        className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 sm:p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
-      
+
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
+        className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 sm:p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
 
       {/* Slide indicators */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors ${
               index === currentSlide ? "bg-white" : "bg-white/50"
             }`}
             aria-label={`Go to slide ${index + 1}`}
