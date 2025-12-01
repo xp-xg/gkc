@@ -90,8 +90,9 @@ const Hero = () => {
           <Button
             size="default"
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
+            asChild
           >
-            Get in touch
+            <a href="/contact">Get in touch</a>
           </Button>
         </div>
       </div>
