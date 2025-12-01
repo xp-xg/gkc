@@ -15,33 +15,38 @@ const Hero = () => {
     {
       image: heroImage1,
       title: "Quality Shipping Containers Kenya",
-      description: "If you are looking to hire or buy quality shipping containers. Global Kenya Containers has a wide range of containers in various sizes to suit your needs.",
-      alt: "Global Kenya Containers shipping container yard"
+      description:
+        "If you are looking to hire or buy quality shipping containers. Global Kenya Containers has a wide range of containers in various sizes to suit your needs.",
+      alt: "Global Kenya Containers shipping container yard",
     },
     {
       image: heroImage2,
       title: "Beautiful Container Homes",
-      description: "Transform your living space with our custom container homes. Durable, affordable, and environmentally sustainable housing solutions across Kenya.",
-      alt: "Modern container home in Kenya"
+      description:
+        "Transform your living space with our custom container homes. Durable, affordable, and environmentally sustainable housing solutions across Kenya.",
+      alt: "Modern container home in Kenya",
     },
     {
       image: heroImage3,
       title: "Professional Container Offices",
-      description: "Create functional workspace solutions with our converted container offices. Perfect for construction sites, remote locations, and temporary needs.",
-      alt: "Container office space in Kenya"
+      description:
+        "Create functional workspace solutions with our converted container offices. Perfect for construction sites, remote locations, and temporary needs.",
+      alt: "Container office space in Kenya",
     },
     {
       image: heroImage4,
       title: "Commercial Container Stalls",
-      description: "Secure and durable retail solutions for entrepreneurs. Our container stalls offer professional appearance at an affordable price across Kenya.",
-      alt: "Commercial container stalls in Kenya"
+      description:
+        "Secure and durable retail solutions for entrepreneurs. Our container stalls offer professional appearance at an affordable price across Kenya.",
+      alt: "Commercial container stalls in Kenya",
     },
     {
       image: heroImage5,
       title: "Specialized Container Solutions",
-      description: "From clinics to classrooms, we convert containers into functional spaces for any purpose. Custom fabrication services available.",
-      alt: "Specialized container clinic in Kenya"
-    }
+      description:
+        "From clinics to classrooms, we convert containers into functional spaces for any purpose. Custom fabrication services available.",
+      alt: "Specialized container clinic in Kenya",
+    },
   ];
 
   useEffect(() => {
@@ -78,9 +83,8 @@ const Hero = () => {
           </div>
         ))}
       </div>
-
       {/* Content */}
-      <div className="relative container mx-auto px-4 h-full flex items-center">
+      <div className="relative container mx-auto px-4 h-full flex items-center z-30">
         <div className="max-w-full sm:max-w-lg md:max-w-2xl text-white">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
             {slides[currentSlide].title}
@@ -88,16 +92,16 @@ const Hero = () => {
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 font-light">
             {slides[currentSlide].description}
           </p>
-          <Button
-            size="default"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
-            asChild
-          >
-            <Link to="/contact">Get in touch</Link>
-          </Button>
+          <Link to="/contact">
+            <Button
+              size="default"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
+            >
+              Get in touch
+            </Button>
+          </Link>
         </div>
       </div>
-
       {/* Navigation arrows */}
       <button
         onClick={goToPrevious}
@@ -106,7 +110,6 @@ const Hero = () => {
       >
         <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
-
       <button
         onClick={goToNext}
         className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white p-2 sm:p-3 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
@@ -114,7 +117,6 @@ const Hero = () => {
       >
         <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
-
       {/* Slide indicators */}
       <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, index) => (
