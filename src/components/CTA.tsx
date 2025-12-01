@@ -17,7 +17,7 @@ const CTA = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 rounded-lg"
               asChild
             >
-              <a href="tel:+254721804377">
+              <a href="tel:+254716068548">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Call Now
               </a>
