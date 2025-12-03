@@ -92,14 +92,25 @@ const Hero = () => {
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 font-light">
             {slides[currentSlide].description}
           </p>
-          <Link to="/contact">
-            <Button
-              size="default"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
-            >
-              Get in touch
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Link to="/contact">
+              <Button
+                size="default"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 elevation-3 hover:elevation-4 transition-all rounded-lg"
+              >
+                Get in touch
+              </Button>
+            </Link>
+            <Link to="/gallery">
+              <Button
+                variant="outline"
+                size="default"
+                className="border-2 border-white/30 hover:border-white/50 text-white font-medium text-base px-6 py-3 sm:px-8 sm:py-4 bg-transparent hover:bg-white/10 elevation-3 hover:elevation-4 transition-all rounded-lg"
+              >
+                View Gallery
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
       {/* Navigation arrows */}

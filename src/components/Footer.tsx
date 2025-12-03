@@ -30,25 +30,33 @@ const Footer = () => {
 
             <div className="flex gap-4 mb-8">
               <a
-                href="#"
+                href="https://www.facebook.com/share/r/15rCcgw1kk/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-accent hover:to-primary rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-accent/30"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
-                className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-accent hover:to-primary rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-accent/30"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/global_kenya_containers?utm_source=qr&igsh=MW41d3g2ZW94bzBzNw=="
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-accent hover:to-primary rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-accent/30"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://vt.tiktok.com/ZSfnYWkXM/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-accent hover:to-primary rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-accent/30"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                  <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.28-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.03.15 1.47.3.48.78.79 1.33.82 1.63.1 3.25-.57 4.46-1.72V8.73c1.99 1.12 4.36.65 5.94-.75 1.96-1.56 2.12-4.62.52-6.5-1.08-1.22-2.64-1.8-4.11-1.69-1.19.09-2.34.54-3.29 1.23C12.96 1.61 12.74.82 12.53.02z"/>
+                </svg>
+              </a>
+              <a
+                href="mailto:info@globalkenyacontainers.com"
                 className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-accent hover:to-primary rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-accent/30"
               >
                 <Mail className="w-5 h-5" />

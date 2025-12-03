@@ -19,7 +19,7 @@ const ContainerSizes = () => {
       alt: "20ft shipping container dimensions for storage and transport Kenya"
     },
     {
-      title: "40 Feet (40 FT) Container",
+      title: "40 Feet Standard Container",
       dimensions: "Length: 40' | Width: 8' | Height: 8'6\"",
       description: "The 40ft container offers significantly more space, being twice the length of a 20-foot container while sharing the same width and height dimensions. With approximately 76m³ of storage space, these containers require minimal site preparation and can be delivered to create an instant warehouse solution across Kenya. Perfect for larger storage needs, commercial applications, and conversion projects. Our shipping containers Kenya solutions include comprehensive delivery and placement services.",
       image: fortyFtContainer,
@@ -83,7 +83,7 @@ const ContainerSizes = () => {
             Choose from our comprehensive range of standard and specialized shipping containers, the best container solutions in Kenya
           </p>
         </header>
-        
+
         <div className="space-y-12 max-w-5xl mx-auto">
           <div>
             <h3 className="text-xl font-medium text-foreground mb-4">Standard Container Sizes</h3>
@@ -93,7 +93,7 @@ const ContainerSizes = () => {
             <p className="text-muted-foreground">
               From basic storage containers to fully customized spaces, our team of Kenya container fabricators transforms standard shipping containers into functional solutions tailored to your specific requirements. We serve clients in Nairobi, Mombasa, Kisumu, and throughout the country with our comprehensive range of container sizes and conversion services.
             </p>
-            
+
             {/* Container Dimensions Table */}
             <div className="overflow-x-auto my-8 rounded-lg border border-border shadow-sm">
               <table className="min-w-full bg-card">
@@ -101,7 +101,7 @@ const ContainerSizes = () => {
                   <tr>
                     <th scope="col" className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider w-1/4">Container Types</th>
                     <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">20 Feet (20 FT)</th>
-                    <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">40 Feet (40 FT)</th>
+                    <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">40 Feet Standard</th>
                     <th scope="col" className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wider w-1/4">40 Feet High Cube</th>
                   </tr>
                 </thead>
@@ -128,14 +128,14 @@ const ContainerSizes = () => {
               </table>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {containerTypes.map((container, index) => (
               <Card key={index} className="overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 rounded-lg" role="listitem">
                 <article>
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img 
-                      src={container.image} 
+                    <img
+                      src={container.image}
                       alt={container.alt}
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                       loading="lazy"
@@ -162,8 +162,8 @@ const ContainerSizes = () => {
                 <Card key={index} className="overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 rounded-lg" role="listitem">
                   <article>
                     <div className="aspect-[4/3] overflow-hidden">
-                      <img 
-                        src={container.image} 
+                      <img
+                        src={container.image}
                         alt={container.alt}
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                         loading="lazy"
