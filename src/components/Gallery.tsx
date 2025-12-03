@@ -33,6 +33,31 @@ const manualTitles: { [key: string]: string } = {
   "globalkenyacontainers_Genset-(reefer-generator)": "Reefer Container Genset",
   "globalkenyacontainers_Reefer-Compressor": "Reefer Container Compressor",
   "globalkenyacontainers_Reefer-repair": "Reefer Container Repair Service",
+
+  // Additional new images with custom titles
+  "1BEDROOM": "1-Bedroom Container Home",
+  "Ablution": "Ablution Container Unit",
+  "globalkenyacontainers_2-Bedroom-House-in-1x40ft": "2-Bedroom Container House (40ft)",
+  "globalkenyacontainers_40ft-dry-shipping-containerlowcube": "Low Cube Dry Shipping Container",
+  "globalkenyacontainers_40ft-high-cube-shipping-container": "High Cube Shipping Container",
+  "globalkenyacontainers_Dormitory": "Container Dormitory Unit",
+  "globalkenyacontainers_Genset": "Genset (Reefer Generator)",
+  "globalkenyacontainers_Reefer-Compressor": "Reefer Compressor Unit",
+  "globalkenyacontainers_Reefer-repair": "Reefer Repair Service",
+  "Kitchen": "Container Kitchen Unit",
+  "school": "Container School Unit",
+  "Tanktainer": "Tanktainer Unit",
+  "20ft-Kitchen": "20ft Container Kitchen",
+  "40ft-office": "40ft Office Container",
+  "40ft-with-wooden-shelves": "40ft Container with Wooden Shelves",
+  "Container-stalls": "Container Stall",
+  "Brand-new-container": "Brand New Shipping Container",
+  "butterfly_": "Custom Butterfly Container",
+  "Classrooms": "Container Classroom",
+  "Container-club": "Container Club",
+  "Genset-(reefer-generator)": "Genset (Reefer Generator)",
+  "Reefer-Compressor": "Reefer Compressor Unit",
+  "Reefer-repair": "Reefer Repair Service",
 };
 
 const titleFromFilename = (filename: string): string => {
@@ -65,7 +90,7 @@ const Gallery = () => {
           const { default: src } = await importer() as { default: string };
           const filename = path.split('/').pop()?.split('.')[0] || '';
           const title = titleFromFilename(filename);
-          
+
           return {
             src,
             alt: `Image of ${title}`,
@@ -108,14 +133,14 @@ const Gallery = () => {
             Our Container Gallery
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore our extensive range of shipping containers. From storage solutions to customized spaces, 
+            Explore our extensive range of shipping containers. From storage solutions to customized spaces,
             see the quality and versatility we deliver across Kenya.
           </p>
         </header>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {galleryImages.map((image, index) => (
-            <Card 
+            <Card
               key={index}
               className="overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group rounded-lg"
               onClick={() => openLightbox(index)}

@@ -165,7 +165,7 @@ export function ContactForm() {
 
     const recipientEmail = "info@globalkenyacontainers.com"; // Your company's email
     const subject = encodeURIComponent(values.subject);
-    
+
     let body = `Name: ${values.name}\n`;
     body += `Email: ${values.email}\n`;
     body += `Subject: ${values.subject}\n`;
@@ -173,7 +173,7 @@ export function ContactForm() {
       body += `Product of Interest: ${values.product}\n`;
     }
     body += `Message: ${values.message}`;
-    
+
     const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${encodeURIComponent(body)}`;
 
     // Open the user's default email client
