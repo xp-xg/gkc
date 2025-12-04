@@ -3,8 +3,9 @@ import dryContainer from "@/assets/dry-container.jpg"; // Keep original image fo
 import commercialStalls from "@/assets/globalkenyacontainers_Container stalls2.jpeg"; // Commercial stalls ending with 2
 import refrigerationContainer from "@/assets/globalkenyacontainers_Genset (reefer generator).jpeg"; // Refrigeration container image
 import officeContainer from "@/assets/globalkenyacontainers_40ft office2.jpeg"; // Office container image ending with 2
-import accommodationContainer from "@/assets/globalkenyacontainers_2 Bedroom House in 1x40ft2.jpeg"; // Accommodation container image ending with 2
-import ablutionContainer from "@/assets/globalkenyacontainers_20ft Kitchen2.jpeg"; // Ablution container image ending with 2 (kitchen facilities are similar to ablution facilities)
+import accommodationContainer from "@/assets/globalkenyacontainers_1 bedroom made from 1x40ft2.jpeg"; // Updated accommodation container image
+import ablutionContainer from "@/assets/Ablution4.jpeg"; // Updated ablution container image
+import tanktainerImage from "@/assets/Tanktainer1.jpeg"; // Tanktainer image
 import transportImage from "@/assets/global-kenya-containers-containers-offices-transport.jpg";
 import fabricationImage from "@/assets/global-kenya-containers-fabrication.jpg";
 import brandingImage from "@/assets/global-kenya-containers-stalls.jpg";
@@ -64,7 +65,7 @@ const Services = () => {
       description:
         "Comfortable residential living spaces converted from shipping containers with proper insulation and fixtures.",
       image: accommodationContainer,
-      alt: "Shipping container accommodation units and living spaces",
+      alt: "Modern shipping container homes in Kenya",
     },
     {
       title: "CONTAINER OFFICES",
@@ -81,11 +82,11 @@ const Services = () => {
       alt: "Commercial container stalls and retail kiosks Kenya",
     },
     {
-      title: "ABLUTION CONTAINERS",
+      title: "TANKTAINERS",
       description:
-        "Specialized bathroom and toilet facilities for construction sites, events, and remote locations.",
-      image: ablutionContainer,
-      alt: "Ablution containers for temporary facilities",
+        "Specialized liquid storage containers for safe transport and storage of chemicals, oils, and other liquid products.",
+      image: tanktainerImage,
+      alt: "Tanktainer liquid storage containers in Kenya",
     },
   ];
 

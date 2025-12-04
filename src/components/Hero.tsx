@@ -107,7 +107,7 @@ const Hero = () => {
                 size="default"
                 className="border-2 border-white/30 hover:border-white/50 text-white font-medium text-base px-6 py-3 sm:px-8 sm:py-4 bg-transparent hover:bg-white/10 elevation-3 hover:elevation-4 transition-all rounded-lg"
               >
-                View Gallery
+                View More
               </Button>
             </Link>
           </div>
