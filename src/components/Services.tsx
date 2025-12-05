@@ -217,6 +217,21 @@ const Services = () => {
               options are available for short-term needs, and purchase options
               for long-term requirements.
             </p>
+
+            <div className="mt-4 space-y-2">
+              <h4 className="font-medium text-foreground">Services we offer:</h4>
+              <ul className="list-disc list-inside text-muted-foreground text-sm sm:text-base space-y-1">
+                <li>Sales/Hire/rental operations</li>
+                <li>Reefer Sales and repair services</li>
+                <li>Transportation/delivery services</li>
+                <li>Crane handling services</li>
+                <li>Fabrication services</li>
+                <li>Container maintenance</li>
+                <li>Installation and assembly work</li>
+                <li>Custom modifications and customization work</li>
+                <li>Branding Services</li>
+              </ul>
+            </div>
           </div>
 
           {/* Additional Services Section */}

@@ -24,7 +24,9 @@ const Navbar = () => {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between text-xs">
           <div className="flex items-center gap-2 mb-1 sm:mb-0">
             <MapPin className="w-3 h-3" />
-            <span className="text-center sm:text-left">National Park East Gate Road, Off Mombasa Road, Nairobi</span>
+            <span className="text-center sm:text-left">
+              National Park East Gate Road, Off Mombasa Road, Nairobi
+            </span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

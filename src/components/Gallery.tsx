@@ -26,6 +26,16 @@ const getCategoryFromFilename = (filename: string): string => {
     return 'specialized';
   } else if (lowerFilename.includes('kitchen') || lowerFilename.includes('ablution')) {
     return 'amenities';
+  } else if (lowerFilename.includes('repair') || lowerFilename.includes('fabrication') ||
+             lowerFilename.includes('transport') || lowerFilename.includes('delivery') ||
+             lowerFilename.includes('crane') || lowerFilename.includes('handling') ||
+             lowerFilename.includes('parts') || lowerFilename.includes('branding') ||
+             lowerFilename.includes('service') || lowerFilename.includes('maintenance') ||
+             lowerFilename.includes('installation') || lowerFilename.includes('assembly') ||
+             lowerFilename.includes('hire') || lowerFilename.includes('rental') ||
+             lowerFilename.includes('customization') || lowerFilename.includes('modification') ||
+             lowerFilename.includes('global-kenya-containers-stalls')) {
+    return 'services';
   } else if (lowerFilename.includes('reefer') || lowerFilename.includes('refrigeration') || lowerFilename.includes('genset')) {
     return 'refrigeration';
   } else if (lowerFilename.includes('dormitory') || lowerFilename.includes('accommodation')) {
@@ -87,6 +97,17 @@ const manualTitles: { [key: string]: string } = {
   "Genset-(reefer-generator)": "Genset (Reefer Generator)",
   "Reefer-Compressor": "Reefer Compressor Unit",
   "Reefer-repair": "Reefer Repair Service",
+
+  // Service-related titles
+  "Branding Services": "Branding Services",
+  "Crane Handling Services": "Crane Handling Services",
+  "Custom modifications and customization work": "Custom Modifications and Customization Work",
+  "global-kenya-containers-fabrication": "Container Fabrication Services",
+  "global-kenya-containers-crane-handling-services": "Crane and Handling Services",
+  "Installation and assembly work": "Installation and Assembly Work",
+  "Reefer repair services": "Reefer Repair Services",
+  "Transportation&delivery services": "Transportation and Delivery Services",
+  "Sales&Hire&rental operations": "Sales, Hire and Rental Operations",
 };
 
 const titleFromFilename = (filename: string): string => {
