@@ -29,6 +29,7 @@ import {
   ChevronRight,
   WrenchIcon,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -90,26 +91,24 @@ const Services = () => {
     },
   ];
 
-  // All container products organized by category
+  // All container products organized by category with 7 strategic internal links
   const containerProducts = {
     "DRY SHIPPING CONTAINERS": [
-      "20ft Container Sale/Hire",
-      "40ft Highcube Container Sale/Hire",
-      "20ft Storage Container",
-      "40ft Storage Container",
+      <Link to="/20ft-container-price-kenya" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">20ft Container Price Kenya</Link>,
+      <Link to="/40ft-container-price-kenya" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">40ft Container Price Kenya</Link>,
       "40ft Flat Rack",
       "20ft Open Top Container",
       "40ft Open Top Container",
     ],
     "CONTAINER HOMES": [
-      "20ft Bedsitter",
-      "40ft 1 Bedroom",
+      <Link to="/used-containers-sale" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">Used Containers for Sale</Link>,
       "2 Bedroom Container House",
       "3 Bedroom Container House",
       "4 Bedroom Container House",
       "Custom Accommodation Units",
     ],
     "CONTAINER OFFICES & EDUCATIONAL": [
+      <Link to="/container-fabrication-services" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">Container Fabrication Services</Link>,
       "20ft Container Office",
       "40ft Container Office",
       "20ft Container Classroom",
@@ -122,6 +121,7 @@ const Services = () => {
       "40ft Container Clinic",
     ],
     "COMMERCIAL STALLS & RETAIL": [
+      <Link to="/container-shops-kenya" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">Container Shops Kenya</Link>,
       "20ft Container Stalls/Shops",
       "40ft Container Stalls/Shops",
       "20ft Container With Shelves",
@@ -129,13 +129,13 @@ const Services = () => {
       "Commercial Container Solutions",
     ],
     "REFRIGERATED CONTAINERS": [
+      <Link to="/reefer-containers-kenya" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">Reefer Containers Kenya</Link>,
       "20ft Refrigerated (Reefer) Container Sale/Hire",
       "40ft Refrigerated (Reefer) Container Sale/Hire",
       "Temperature-Controlled Units",
       "Custom Refrigeration Solutions",
     ],
     "SPECIALIZED CONTAINERS": [
-      "Ablution Containers",
       "Tanktainers",
       "Customized Container Solutions",
       "Portable Facilities",
@@ -229,7 +229,7 @@ const Services = () => {
                 <li>Reefer Sales and repair services</li>
                 <li>Transportation/delivery services</li>
                 <li>Crane handling services</li>
-                <li>Fabrication services</li>
+                <li><Link to="/container-fabrication-services" className="text-primary hover:text-primary/80 underline decoration-dotted underline-offset-2 transition-all">Fabrication services</Link></li>
                 <li>Container maintenance</li>
                 <li>Installation and assembly work</li>
                 <li>Custom modifications and customization work</li>

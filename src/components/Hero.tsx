@@ -17,35 +17,35 @@ const Hero = () => {
       title: "Quality Shipping Containers Kenya",
       description:
         "If you are looking to hire or buy quality shipping containers. Global Kenya Containers has a wide range of containers in various sizes to suit your needs.",
-      alt: "Global Kenya Containers shipping container yard",
+      alt: "Quality shipping containers for sale in Kenya at Global Kenya Containers yard",
     },
     {
       image: heroImage2,
       title: "Beautiful Container Homes",
       description:
         "Transform your living space with our custom container homes. Durable, affordable, and environmentally sustainable housing solutions across Kenya.",
-      alt: "Modern container home in Kenya",
+      alt: "Modern container homes Kenya for sale with professional finishing",
     },
     {
       image: heroImage3,
       title: "Professional Container Offices",
       description:
         "Create functional workspace solutions with our converted container offices. Perfect for construction sites, remote locations, and temporary needs.",
-      alt: "Container office space in Kenya",
+      alt: "Professional container offices Kenya for rent with custom interiors",
     },
     {
       image: heroImage4,
       title: "Commercial Container Stalls",
       description:
         "Secure and durable retail solutions for entrepreneurs. Our container stalls offer professional appearance at an affordable price across Kenya.",
-      alt: "Commercial container stalls in Kenya",
+      alt: "Commercial container stalls Kenya for sale with attractive design",
     },
     {
       image: heroImage5,
       title: "Specialized Container Solutions",
       description:
         "From clinics to classrooms, we convert containers into functional spaces for any purpose. Custom fabrication services available.",
-      alt: "Specialized container clinic in Kenya",
+      alt: "Specialized container clinic Kenya fabricated with professional modifications",
     },
   ];
 

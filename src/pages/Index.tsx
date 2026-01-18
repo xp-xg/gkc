@@ -18,22 +18,22 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Global Kenya Containers - Quality Shipping Containers Kenya</title>
-        <meta name="description" content="Find high-quality new and used shipping containers for sale in Kenya. Global Kenya Containers offers professional container conversion services for homes, offices, and commercial stalls in Nairobi, Mombasa, and across the country." />
-        <meta name="keywords" content="shipping containers Kenya, storage containers Nairobi, container offices, refrigerated containers, accommodation containers, commercial stalls Kenya, shipping containers for sale, container conversion" />
+        <title>Shipping Containers Kenya | Buy, Rent & Fabricate 20ft 40ft | Call 0716 068548</title>
+        <meta name="description" content="Looking to buy or rent shipping containers in Kenya? Global Kenya Containers offers high-quality 20ft and 40ft containers at competitive prices. Whether you need storage containers, container shops, offices, or custom fabrication, we deliver across Nairobi, Mombasa, and all of Kenya. Call 0716 068548 for quotes & viewing." />
+        <meta name="keywords" content="shipping containers Kenya, containers for sale Kenya, 20ft container price Kenya, 40ft container Kenya, container shop Kenya, shipping containers Nairobi, used containers for sale Nairobi, container fabrication Kenya, shipping container offices Kenya, reefer containers Kenya, container homes Kenya, container transport Kenya, container stalls Kenya, container offices Kenya, container conversion Kenya, storage containers Kenya, container fabrication services, portable container offices Kenya, ablution containers Kenya" />
         <link rel="canonical" href="https://globalkenyacontainers.com/" />
 
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="Global Kenya Containers - Quality Shipping Containers Kenya" />
-        <meta property="og:description" content="Find high-quality new and used shipping containers for sale in Kenya. Global Kenya Containers offers professional container conversion services for homes, offices, and commercial stalls in Nairobi, Mombasa, and across the country." />
+        <meta property="og:title" content="Shipping Containers Kenya | Buy, Rent & Fabricate 20ft 40ft | Call 0716 068548" />
+        <meta property="og:description" content="Looking to buy or rent shipping containers in Kenya? Global Kenya Containers offers high-quality 20ft and 40ft containers at competitive prices. Whether you need storage containers, container shops, offices, or custom fabrication, we deliver across Nairobi, Mombasa, and all of Kenya." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://globalkenyacontainers.com/" />
-        <meta property="og:image" content="/Global kenya containers logo.png" />
+        <meta property="og:image" content="/og-image.png" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Global Kenya Containers - Quality Shipping Containers" />
-        <meta name="twitter:description" content="Find high-quality new and used shipping containers for sale in Kenya. Global Kenya Containers offers professional container conversion services for homes, offices, and commercial stalls in Nairobi, Mombasa, and across the country." />
+        <meta name="twitter:title" content="Shipping Containers Kenya | Buy, Rent & Fabricate 20ft 40ft" />
+        <meta name="twitter:description" content="Looking to buy or rent shipping containers in Kenya? Global Kenya Containers offers high-quality 20ft and 40ft containers at competitive prices. Whether you need storage containers, container shops, offices, or custom fabrication, we deliver across Nairobi, Mombasa, and all of Kenya." />
       </Helmet>
       <Navbar />
       <main className="flex-grow">
@@ -69,7 +69,7 @@ const Index = () => {
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-900">Why Choose Global Kenya Containers</h2>
               <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-600">
-                As the best container people in all works containers, we transform quality shipping containers into innovative solutions for residential and commercial spaces across Kenya.
+                Looking to buy or rent shipping containers in Kenya? Global Kenya Containers offers high-quality 20ft and 40ft containers at competitive prices. Whether you need storage containers, container shops, offices, or custom fabrication, we deliver across Nairobi, Mombasa, and all of Kenya.
               </p>
             </div>
 
@@ -83,7 +83,7 @@ const Index = () => {
                     <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Premium Quality Containers</h3>
                     <p className="text-sm sm:text-base text-gray-600">
                       Our shipping containers are sourced from top manufacturers worldwide, ensuring durability and reliability for all your projects.
-                      We offer new and used containers that meet international standards for strength and safety.
+                      We offer new and used containers that meet international standards for strength and safety. Find the best <strong>shipping containers for sale in Kenya</strong> with competitive pricing for 20ft and 40ft options.
                     </p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Index = () => {
                     <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Expert Container Solutions</h3>
                     <p className="text-sm sm:text-base text-gray-600">
                       Containers have evolved beyond their original purpose of transporting goods and are now being creatively repurposed as innovative solutions for both residential and commercial spaces.
-                      At Global Kenya Containers, we understand this transformation and provide containers that can be customized to include all the comforts of traditional spaces while reducing environmental footprint.
+                      At Global Kenya Containers, we understand this transformation and provide containers that can be customized to include all the comforts of traditional spaces while reducing environmental footprint. We specialize in <strong>container fabrication Kenya</strong> services for homes, offices, and commercial stalls.
                     </p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ const Index = () => {
                     <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Professional Container Fabrication</h3>
                     <p className="text-sm sm:text-base text-gray-600">
                       Our skilled team of Kenya container fabricators possess the expertise to cut, weld, insulate, and finish containers to meet your specific requirements.
-                      From installing windows and doors to electrical and plumbing work, we turn these industrial vessels into comfortable living spaces or functional retail outlets.
+                      From installing windows and doors to electrical and plumbing work, we turn these industrial vessels into comfortable living spaces or functional retail outlets. Our <strong>container fabrication services</strong> cover all areas including Nairobi, Mombasa, Kisumu, Nakuru, and Eldoret.
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const Index = () => {
                 <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
                   <img
                     src={ButterflyImage}
-                    alt="High-quality shipping container Kenya"
+                    alt="High-quality shipping container Kenya for sale"
                     className="w-full h-48 sm:h-60 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -127,14 +127,14 @@ const Index = () => {
                   <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
                     <img
                       src={ContainerStalls}
-                      alt="Container office Kenya"
+                      alt="Container office Kenya for rent"
                       className="w-full h-24 sm:h-32 object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="rounded-xl overflow-hidden shadow-xl elevation-2">
                     <img
                       src={OfficeContainer}
-                      alt="Container accommodation Kenya"
+                      alt="Container accommodation Kenya for sale"
                       className="w-full h-24 sm:h-32 object-cover hover:scale-105 transition-transform duration-500"
                     />
                   </div>
@@ -151,7 +151,7 @@ const Index = () => {
                     <p className="text-sm sm:text-base text-gray-700 mb-6">
                       These sturdy steel structures have gained immense popularity as affordable and sustainable options for homes and shops.
                       With their modular design and ease of transport, containers can be easily transformed into cozy Container Houses or functional retail spaces.
-                      At Global Kenya Containers, we play a pivotal role in this transformation, helping homeowners and entrepreneurs capitalize on the mobility and distinctive aesthetic appeal of containers.
+                      At Global Kenya Containers, we play a pivotal role in this transformation, helping homeowners and entrepreneurs capitalize on the mobility and distinctive aesthetic appeal of containers. We serve all major cities including <strong>Nairobi</strong>, <strong>Mombasa</strong>, <strong>Kisumu</strong>, <strong>Nakuru</strong>, and <strong>Eldoret</strong>.
                     </p>
 
                     {/* Services Overview */}
@@ -208,7 +208,7 @@ const Index = () => {
                 <div className="h-40 sm:h-48 overflow-hidden">
                   <img
                     src={ButterflyImage}
-                    alt="Beautiful container houses Kenya"
+                    alt="Beautiful container houses Kenya for sale"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -232,7 +232,7 @@ const Index = () => {
                 <div className="h-40 sm:h-48 overflow-hidden">
                   <img
                     src={OfficeContainer}
-                    alt="Container office Kenya"
+                    alt="Container office Kenya for rent"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -256,7 +256,7 @@ const Index = () => {
                 <div className="h-40 sm:h-48 overflow-hidden">
                   <img
                     src={ContainerStalls}
-                    alt="Commercial container stalls Kenya"
+                    alt="Commercial container stalls Kenya for sale"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -280,7 +280,7 @@ const Index = () => {
                 <div className="h-40 sm:h-48 overflow-hidden">
                   <img
                     src={ReeferImage}
-                    alt="Reefer containers Kenya"
+                    alt="Reefer containers Kenya for sale"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -304,7 +304,7 @@ const Index = () => {
                 <div className="h-40 sm:h-48 overflow-hidden">
                   <img
                     src={TransportImage}
-                    alt="Container transport Kenya"
+                    alt="Container transport Kenya services"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -328,7 +328,7 @@ const Index = () => {
                 <div className="h-40 sm:h-48 overflow-hidden">
                   <img
                     src={FabricationImage}
-                    alt="Container fabrication Kenya"
+                    alt="Container fabrication Kenya services"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>

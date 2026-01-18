@@ -14,7 +14,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
             <Button
               size="default"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 rounded-lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 rounded-lg elevation-3 hover:elevation-4 transition-all duration-300"
               asChild
             >
               <a href="tel:+254716068548">
@@ -25,13 +25,12 @@ const CTA = () => {
 
             <Button
               size="default"
-              variant="secondary"
-              className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium text-base px-6 py-3 sm:px-8 sm:py-4 rounded-lg mt-2 sm:mt-0"
+              className="bg-primary/90 hover:bg-primary text-primary-foreground font-medium text-base px-6 py-3 sm:px-8 sm:py-4 rounded-lg mt-2 sm:mt-0 elevation-3 hover:elevation-4 transition-all duration-300"
               asChild
             >
               <a href="/contact">
                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Send Message
+                Get Quote
               </a>
             </Button>
           </div>
