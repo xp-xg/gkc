@@ -10,6 +10,7 @@ interface GalleryImage {
   alt: string;
   title: string;
   category: string;
+  description: string;
 }
 
 // Define categories based on filename patterns
@@ -49,71 +50,161 @@ const getCategoryFromFilename = (filename: string): string => {
   }
 };
 
-const manualTitles: { [key: string]: string } = {
-  "accommodation-container": "Luxury Accommodation Units",
-  "commercial-stalls": "Versatile Commercial Stalls",
-  "dry-container": "Secure Dry Storage Containers",
-  "hero-containers": "Container Yard Display",
-  "office-container": "Modern Office Containers",
-  "refrigeration-container": "Refrigerated Container Solutions",
-  "globalkenyacontainers_1-bedroom-made-from-1x40ft": "1-Bedroom Container Home (40ft)",
-  "globalkenyacontainers_2-Bedroom-House-in-1x40ft": "2-Bedroom Container Home (40ft)",
-  "globalkenyacontainers_20ft-Container-Ablution-Block": "20ft Ablution Block",
-  "globalkenyacontainers_20ft-Kitchen": "20ft Container Kitchen",
-  "globalkenyacontainers_40ft-Container-Clinic": "40ft Container Clinic",
-  "globalkenyacontainers_40ft-office": "40ft Office Container",
-  "globalkenyacontainers_40ft-with-wooden-shelves": "40ft Container with Shelving",
-  "globalkenyacontainers_Brand-new-container": "Brand New Shipping Containers",
-  "globalkenyacontainers_butterfly_": "Custom Butterfly Container",
-  "globalkenyacontainers_Classrooms": "Container Classrooms",
-  "globalkenyacontainers_Container-club": "Custom Container Club",
-  "globalkenyacontainers_Container-stalls": "Retail Container Stalls",
-  "globalkenyacontainers_Dormitory": "Container Dormitory",
-  "globalkenyacontainers_Genset-(reefer-generator)": "Reefer Container Genset",
-  "globalkenyacontainers_Reefer-Compressor": "Reefer Container Compressor",
-  "globalkenyacontainers_Reefer-repair": "Reefer Container Repair Service",
+const manualTitles: { [key: string]: { title: string; description: string } } = {
+  "accommodation-container": {
+    title: "Luxury Accommodation Units",
+    description: "High-end, comfortable accommodation containers, fully furnished and customizable for various needs in Kenya."
+  },
+  "commercial-stalls": {
+    title: "Versatile Commercial Stalls",
+    description: "Affordable and secure commercial stalls made from shipping containers, ideal for small businesses and startups in Nairobi."
+  },
+  "dry-container": {
+    title: "Secure Dry Storage Containers",
+    description: "20ft and 40ft dry storage containers available for sale or hire, providing secure storage solutions across Kenya."
+  },
+  "hero-containers": {
+    title: "Container Yard Display",
+    description: "A display of various shipping containers at the Global Kenya Containers yard, showcasing different sizes and types."
+  },
+  "office-container": {
+    title: "Modern Office Containers",
+    description: "Custom-built office containers with modern amenities, offering a flexible and cost-effective workspace solution."
+  },
+  "refrigeration-container": {
+    title: "Refrigerated Container Solutions",
+    description: "High-quality reefer containers for temperature-sensitive goods, available for sale and hire with 24/7 support."
+  },
+  "globalkenyacontainers_1-bedroom-made-from-1x40ft": {
+    title: "1-Bedroom Container Home (40ft)",
+    description: "A beautifully converted 1-bedroom home from a 40ft shipping container, featuring a modern interior and spacious layout."
+  },
+  "globalkenyacontainers_2-Bedroom-House-in-1x40ft": {
+    title: "2-Bedroom Container Home (40ft)",
+    description: "Spacious 2-bedroom house fabricated from a 40ft container, perfect for a small family, with a kitchenette and bathroom."
+  },
+  "globalkenyacontainers_20ft-Container-Ablution-Block": {
+    title: "20ft Ablution Block",
+    description: "A 20ft container converted into a clean and durable ablution block with toilets and showers, ideal for construction sites."
+  },
+  "globalkenyacontainers_20ft-Kitchen": {
+    title: "20ft Container Kitchen",
+    description: "A fully equipped 20ft container kitchen, perfect for remote sites, events, or as an extension to a business."
+  },
+  "globalkenyacontainers_40ft-Container-Clinic": {
+    title: "40ft Container Clinic",
+    description: "A 40ft shipping container converted into a mobile clinic, complete with consultation rooms and medical equipment."
+  },
+  "globalkenyacontainers_40ft-office": {
+    title: "40ft Office Container",
+    description: "Expansive 40ft office container providing ample space for a team, with options for partitions and custom layouts."
+  },
+  "globalkenyacontainers_40ft-with-wooden-shelves": {
+    title: "40ft Container with Shelving",
+    description: "A 40ft container fitted with sturdy wooden shelves, perfect for organized storage of documents or goods."
+  },
+  "globalkenyacontainers_Brand-new-container": {
+    title: "Brand New Shipping Containers",
+    description: "A stock of brand new 20ft and 40ft shipping containers, available for immediate purchase and delivery in Kenya."
+  },
+  "globalkenyacontainers_butterfly_": {
+    title: "Custom Butterfly Container",
+    description: "A unique butterfly-style container conversion with awnings that open up, creating a spacious and inviting setup."
+  },
+  "globalkenyacontainers_Classrooms": {
+    title: "Container Classrooms",
+    description: "Affordable and quick-to-deploy container classrooms, providing a conducive learning environment for students."
+  },
+  "globalkenyacontainers_Container-club": {
+    title: "Custom Container Club",
+    description: "An innovative and trendy club or bar built from a shipping container, featuring a unique design and atmosphere."
+  },
+  "globalkenyacontainers_Container-stalls": {
+    title: "Retail Container Stalls",
+    description: "A row of brightly colored container stalls, perfect for a vibrant market or retail space."
+  },
+  "globalkenyacontainers_Dormitory": {
+    title: "Container Dormitory",
+    description: "A multi-unit container dormitory, providing comfortable and secure accommodation for students or workers."
+  },
+  "globalkenyacontainers_Genset-(reefer-generator)": {
+    title: "Reefer Container Genset",
+    description: "A generator set specifically designed to power refrigerated (reefer) containers, ensuring uninterrupted cooling."
+  },
+  "globalkenyacontainers_Reefer-Compressor": {
+    title: "Reefer Container Compressor",
+    description: "Close-up of a reefer container's compressor unit, a critical component for maintaining temperature."
+  },
+  "globalkenyacontainers_Reefer-repair": {
+    title: "Reefer Container Repair Service",
+    description: "A technician performing maintenance and repair on a refrigerated container to ensure optimal performance."
+  },
 
   // Additional new images with custom titles
-  "1BEDROOM": "1-Bedroom Container Home",
-  "Ablution": "Ablution Container Unit",
-  "globalkenyacontainers_2-Bedroom-House-in-1x40ft": "2-Bedroom Container House (40ft)",
-  "globalkenyacontainers_40ft-dry-shipping-containerlowcube": "Low Cube Dry Shipping Container",
-  "globalkenyacontainers_40ft-high-cube-shipping-container": "High Cube Shipping Container",
-  "globalkenyacontainers_Dormitory": "Container Dormitory Unit",
-  "globalkenyacontainers_Genset": "Genset (Reefer Generator)",
-  "globalkenyacontainers_Reefer-Compressor": "Reefer Compressor Unit",
-  "globalkenyacontainers_Reefer-repair": "Reefer Repair Service",
-  "Kitchen": "Container Kitchen Unit",
-  "school": "Container School Unit",
-  "Tanktainer": "Tanktainer Unit",
-  "20ft-Kitchen": "20ft Container Kitchen",
-  "40ft-office": "40ft Office Container",
-  "40ft-with-wooden-shelves": "40ft Container with Wooden Shelves",
-  "Container-stalls": "Container Stall",
-  "Brand-new-container": "Brand New Shipping Container",
-  "butterfly_": "Custom Butterfly Container",
-  "Classrooms": "Container Classroom",
-  "Container-club": "Container Club",
-  "Genset-(reefer-generator)": "Genset (Reefer Generator)",
-  "Reefer-Compressor": "Reefer Compressor Unit",
-  "Reefer-repair": "Reefer Repair Service",
+  "1BEDROOM": {
+    title: "1-Bedroom Container Home",
+    description: "Stylish and compact 1-bedroom home made from a shipping container, showcasing modern and efficient living."
+  },
+  "Ablution": {
+    title: "Ablution Container Unit",
+    description: "A standalone ablution container unit, equipped with toilets and sinks for public or private use."
+  },
+  "Kitchen": {
+    title: "Container Kitchen Unit",
+    description: "A custom-built container kitchen with stainless steel surfaces and professional cooking equipment."
+  },
+  "school": {
+    title: "Container School Unit",
+    description: "A brightly painted container transformed into a school or classroom, offering an inspiring learning space."
+  },
+  "Tanktainer": {
+    title: "Tanktainer Unit",
+    description: "A specialized tank container (tanktainer) for the safe transport and storage of liquids and gases."
+  },
 
   // Service-related titles
-  "Branding Services": "Branding Services",
-  "Crane Handling Services": "Crane Handling Services",
-  "Custom modifications and customization work": "Custom Modifications and Customization Work",
-  "global-kenya-containers-fabrication": "Container Fabrication Services",
-  "global-kenya-containers-crane-handling-services": "Crane and Handling Services",
-  "Installation and assembly work": "Installation and Assembly Work",
-  "Reefer repair services": "Reefer Repair Services",
-  "Transportation&delivery services": "Transportation and Delivery Services",
-  "Sales&Hire&rental operations": "Sales, Hire and Rental Operations",
+  "Branding Services": {
+    title: "Branding Services",
+    description: "Container with custom branding and logo applied, showcasing the branding services offered by Global Kenya Containers."
+  },
+  "Crane Handling Services": {
+    title: "Crane Handling Services",
+    description: "A crane lifting and positioning a shipping container, demonstrating professional crane handling services."
+  },
+  "Custom modifications and customization work": {
+    title: "Custom Modifications and Customization Work",
+    description: "A container undergoing custom modification work, with welders fabricating new windows and doors."
+  },
+  "global-kenya-containers-fabrication": {
+    title: "Container Fabrication Services",
+    description: "Skilled workers fabricating a custom container structure at the Global Kenya Containers workshop."
+  },
+  "global-kenya-containers-crane-handling-services": {
+    title: "Crane and Handling Services",
+    description: "A large crane carefully maneuvering a 40ft container at a client's site, part of our handling services."
+  },
+  "Installation and assembly work": {
+    title: "Installation and Assembly Work",
+    description: "The team from Global Kenya Containers assembling a multi-container structure on-site for a client."
+  },
+  "Reefer repair services": {
+    title: "Reefer Repair Services",
+    description: "A certified technician inspecting and repairing a reefer container's cooling system to ensure it runs efficiently."
+  },
+  "Transportation&delivery services": {
+    title: "Transportation and Delivery Services",
+    description: "A truck from Global Kenya Containers delivering a shipping container to a customer's location anywhere in Kenya."
+  },
+  "Sales&Hire&rental operations": {
+    title: "Sales, Hire and Rental Operations",
+    description: "The sales and operations office of Global Kenya Containers, with staff ready to assist with container needs."
+  }
 };
 
-const titleFromFilename = (filename: string): string => {
-  const manualTitle = Object.keys(manualTitles).find(key => filename.includes(key));
-  if (manualTitle) {
-    return manualTitles[manualTitle];
+const titleFromFilename = (filename: string): { title: string; description: string } => {
+  const manualEntry = Object.keys(manualTitles).find(key => filename.includes(key));
+  if (manualEntry) {
+    return manualTitles[manualEntry];
   }
 
   const cleaned = filename
@@ -125,7 +216,8 @@ const titleFromFilename = (filename: string): string => {
     .trim();
 
   // Convert to Title Case
-  return cleaned.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+  const title = cleaned.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+  return { title, description: title }; // Fallback to title for description
 };
 
 const Gallery = () => {
@@ -141,14 +233,15 @@ const Gallery = () => {
         Object.entries(imageModules).map(async ([path, importer]) => {
           const { default: src } = await importer() as { default: string };
           const filename = path.split('/').pop()?.split('.')[0] || '';
-          const title = titleFromFilename(filename);
+          const { title, description } = titleFromFilename(filename);
           const category = getCategoryFromFilename(filename);
 
           return {
             src,
-            alt: `Image of ${title}`,
+            alt: description,
             title,
             category,
+            description,
           };
         })
       );

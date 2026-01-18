@@ -78,7 +78,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
               <Link to="/" className="flex items-center">
                 <img
-                  src="/Global kenya containers logo.png"
+                  src="/logo.png"
                   alt="Global Kenya Containers Logo"
                   className="w-12 h-12 md:w-16 md:h-16 object-contain"
                 />

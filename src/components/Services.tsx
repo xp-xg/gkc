@@ -150,6 +150,7 @@ const Services = () => {
         "Professional delivery services countrywide for all container types.",
       icon: <Truck className="w-6 h-6" />,
       image: transportImage,
+      alt: "Container being transported by truck to a client site in Kenya",
     },
     {
       title: "Container Fabrication",
@@ -157,18 +158,21 @@ const Services = () => {
         "Custom construction and modification of container-based structures.",
       icon: <Wrench className="w-6 h-6" />,
       image: fabricationImage,
+      alt: "Workers fabricating and modifying a shipping container in a workshop",
     },
     {
       title: "Container Branding",
       description: "Custom branding and advertising solutions for containers.",
       icon: <Palette className="w-6 h-6" />,
       image: brandingImage,
+      alt: "Shipping container with custom branding and logo applied for advertising",
     },
     {
       title: "Crane Handling Services",
       description: "Professional crane handling and positioning of containers.",
       icon: <Ship className="w-6 h-6" />,
       image: craneHandlingImage,
+      alt: "Large crane lifting and positioning a shipping container at a construction site",
     },
   ];
 
@@ -255,7 +259,7 @@ const Services = () => {
                   <div className="overflow-hidden">
                     <img
                       src={service.image}
-                      alt={service.title}
+                      alt={service.alt}
                       className="w-full h-24 sm:h-40 object-cover"
                     />
                   </div>

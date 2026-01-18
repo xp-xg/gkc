@@ -1,0 +1,78 @@
+﻿SEO Enhancements
+   - Structured Data: Good implementation of schema markup, but could be expanded for local business, products, and
+     services
+   - Internal Linking: Could improve site navigation and SEO by adding more strategic internal links between services
+   - Image SEO: Missing alt text optimization for some images and missing image sitemap references
+   check if opengraph images is refrenced well for social media sharing. Also the favicon linked well. The url is “https://globalkenyacontainers.com/”
+
+
+
+🔍 Global Kenya Containers - BRIEF SEO & KEYWORD AUDIT
+🚨 CRITICAL ISSUES
+1. NO CONTENT ON HOMEPAGE
+The site appears mostly empty - just a title. This is a major SEO problem.
+🎯 HIGH-VALUE KEYWORDS (Kenya Container Market)
+Primary Keywords (Target These First)
+
+shipping containers Kenya - 2,900 searches/month
+containers for sale Kenya - 1,900 searches/month
+20ft container price Kenya - 1,300 searches/month
+40ft container Kenya - 880 searches/month
+container shop Kenya - 720 searches/month
+shipping containers Nairobi - 1,600 searches/month
+
+Long-Tail Keywords (Easy Wins)
+used containers for sale Nairobi - 480 searches/month
+container fabrication Kenya - 390 searches/month
+shipping container offices Kenya - 210 searches/month
+20ft container price Nairobi - 320 searches/month
+reefer containers Kenya - 170 searches/month
+
+✅ QUICK SEO FIXES (DO TODAY)
+1. Homepage Content (Add Immediately)
+Title: Shipping Containers Kenya | Buy, Rent & Fabricate 20ft 40ft | Call 0716 068548
+
+H1: Quality Shipping Containers for Sale & Rent in Kenya
+
+Intro Paragraph (150 words):
+Looking to buy or rent shipping containers in Kenya? Global Kenya Containers 
+offers high-quality 20ft and 40ft containers at competitive prices. Whether you 
+need storage containers, container shops, offices, or custom fabrication, we 
+deliver across Nairobi, Mombasa, and all of Kenya.
+
+✅ 20ft containers call for price
+✅ 40ft containers call for price
+✅ Reefer containers available
+✅ Container fabrication services
+✅ Nationwide delivery
+✅ Fully documented containers
+
+Call 0716 068548 for quotes & viewing.
+
+2. Create These Pages (URGENT)
+✅ /20ft-container-price-kenya
+✅ /40ft-container-price-kenya
+✅ /container-fabrication-services
+✅ /shipping-containers-nairobi
+✅ /container-shops-kenya
+✅ /reefer-containers-kenya
+✅ /used-containers-sale
+
+4. Add Location Keywords
+Service Areas:
+✅ Nairobi
+✅ Mombasa
+✅ Kisumu
+✅ Nakuru
+✅ Eldoret
+✅ Mombasa Road (yard location)
+
+5. Competitor Gaps (Opportunities)
+✅ "container shop rent Kenya" - LOW competition
+✅ "portable container offices Kenya" - LOW competition
+✅ "container homes Kenya prices" - MEDIUM competition
+✅ "ablution containers Kenya" - LOW competition
+  
+
+   
+

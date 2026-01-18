@@ -20,7 +20,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold">Our Location</h3>
               <div className="overflow-hidden rounded-lg elevation-2">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7331220676915!2d36.860554911457!3d-1.336366135679169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117f6d8c2c89%3A0x2ef7e9bc84c46997!2sContainers%20Kenya!5e0!3m2!1sen!2sus!4v1764855306137!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7331220676915!2d36.8608299!3d-1.3365049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1130752697dd:0x6022d30e2b094209!2sGlobal+Kenya+Containers!5e0!3m2!1sen!2s"
                   width="100%"
                   height="350"
                   style={{ border: 0 }}
