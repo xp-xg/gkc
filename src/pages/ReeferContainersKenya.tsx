@@ -44,6 +44,37 @@ const ReeferContainersKenya = () => {
             "description": "Quality reefer containers for sale and rent in Kenya from Global Kenya Containers. Temperature-controlled solutions for storing and transporting perishable goods across Kenya. Features advanced cooling systems that maintain consistent temperatures from -25°C to +25°C.",
             "sku": "REEFER-CONTAINER-KENYA",
             "mpn": "REFRIGERATED-CONTAINER-KENYA",
+            "brand": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "category": "Refrigerated Containers",
+            "material": "Steel with Polyurethane Insulation",
+            "color": "White/Blue",
+            "weight": {
+              "@type": "QuantitativeValue",
+              "value": "3800",
+              "unitCode": "KGM"
+            },
+            "depth": {
+              "@type": "QuantitativeValue",
+              "value": "20",
+              "unitCode": "FEET"
+            },
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": "8",
+              "unitCode": "FEET"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": "8.5",
+              "unitCode": "FEET"
+            },
             "offers": {
               "@type": "Offer",
               "price": "800000",
@@ -58,6 +89,16 @@ const ReeferContainersKenya = () => {
                 "price": "800000",
                 "priceCurrency": "KES",
                 "valueAddedTaxIncluded": "false"
+              },
+              "availabilityStarts": "2024-01-01",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Kenya"
+              },
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "value": "5",
+                "unitCode": "DAY"
               }
             },
             "aggregateRating": {
@@ -201,11 +242,11 @@ const ReeferContainersKenya = () => {
                     <ul className="space-y-3">
                       <li className="flex justify-between">
                         <span>20ft Reefer Container</span>
-                        <span className="font-bold">From KSh 800,000</span>
+                        <span className="font-bold">From KSh 1,000,000</span>
                       </li>
                       <li className="flex justify-between">
                         <span>40ft Reefer Container</span>
-                        <span className="font-bold">From KSh 1,200,000</span>
+                        <span className="font-bold">From KSh 1,500,000</span>
                       </li>
                       <li className="flex justify-between">
                         <span>Used Reefer Containers</span>

@@ -75,55 +75,94 @@ const TwentyFtContainerPriceKenya = () => {
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            name: "20ft Shipping Container",
-            image: [
+            "name": "20ft Shipping Container",
+            "image": [
               "https://globalkenyacontainers.com/images/20ft-container-exterior.jpg",
               "https://globalkenyacontainers.com/images/20ft-container-interior.jpg",
-              "https://globalkenyacontainers.com/images/20ft-container-specifications.jpg",
+              "https://globalkenyacontainers.com/images/20ft-container-specifications.jpg"
             ],
-            description:
-              "High-quality 20ft shipping containers for sale in Kenya. Perfect for storage, offices, homes, and commercial stalls across Kenya. Available in new and used conditions.",
-            sku: "20FT-CONTAINER-KENYA",
-            mpn: "20ft-Dry-Container",
-            offers: {
+            "description": "High-quality 20ft shipping containers for sale in Kenya. Perfect for storage, offices, homes, and commercial stalls across Kenya. Available in new and used conditions.",
+            "sku": "20FT-CONTAINER-KENYA",
+            "mpn": "20ft-Dry-Container",
+            "brand": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "category": "Shipping Containers",
+            "material": "Steel",
+            "color": "Standard Container Color",
+            "weight": {
+              "@type": "QuantitativeValue",
+              "value": "2200",
+              "unitCode": "KGM"
+            },
+            "depth": {
+              "@type": "QuantitativeValue",
+              "value": "20",
+              "unitCode": "FEET"
+            },
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": "8",
+              "unitCode": "FEET"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": "8.5",
+              "unitCode": "FEET"
+            },
+            "offers": {
               "@type": "Offer",
-              price: "200000",
-              priceCurrency: "KES",
-              availability: "https://schema.org/InStock",
-              seller: {
+              "price": "200000",
+              "priceCurrency": "KES",
+              "availability": "https://schema.org/InStock",
+              "seller": {
                 "@type": "Organization",
-                name: "Global Kenya Containers",
+                "name": "Global Kenya Containers"
               },
-              priceSpecification: {
+              "priceSpecification": {
                 "@type": "PriceSpecification",
-                price: "200000",
-                priceCurrency: "KES",
-                valueAddedTaxIncluded: "false",
+                "price": "200000",
+                "priceCurrency": "KES",
+                "valueAddedTaxIncluded": "false"
               },
+              "availabilityStarts": "2024-01-01",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Kenya"
+              },
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "value": "3",
+                "unitCode": "DAY"
+              }
             },
-            aggregateRating: {
+            "aggregateRating": {
               "@type": "AggregateRating",
-              ratingValue: "4.8",
-              reviewCount: "120",
-              bestRating: "5",
-              worstRating: "1",
+              "ratingValue": "4.8",
+              "reviewCount": "120",
+              "bestRating": "5",
+              "worstRating": "1"
             },
-            review: [
+            "review": [
               {
                 "@type": "Review",
-                reviewBody:
-                  "Quality containers at competitive prices. Excellent service and timely delivery across Kenya.",
-                datePublished: "2024-01-15",
-                reviewRating: {
+                "reviewBody": "Quality containers at competitive prices. Excellent service and timely delivery across Kenya.",
+                "datePublished": "2024-01-15",
+                "reviewRating": {
                   "@type": "Rating",
-                  ratingValue: "5",
+                  "ratingValue": "5"
                 },
-                author: {
+                "author": {
                   "@type": "Person",
-                  name: "Dan Mutua",
-                },
-              },
-            ],
+                  "name": "Dan Mutua"
+                }
+              }
+            ]
           })}
         </script>
       </Helmet>
@@ -187,12 +226,12 @@ const TwentyFtContainerPriceKenya = () => {
                     Current 20ft Container Prices in Kenya
                   </h3>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>New 20ft Dry Container: Starting from KSh 300,000</li>
+                    <li>New 20ft Dry Container: Starting from KSh 240,000</li>
                     <li>Used 20ft Dry Container: Starting from KSh 200,000</li>
                     <li>
-                      20ft Refrigerated Container: Starting from KSh 800,000
+                      20ft Refrigerated Container: Starting from KSh 1,400,000
                     </li>
-                    <li>20ft High Cube Container: Starting from KSh 350,000</li>
+                    <li>20ft High Cube Container: Starting from KSh 300,000</li>
                   </ul>
                   <p className="mt-4 text-sm italic">
                     Prices vary based on condition, specifications, and delivery

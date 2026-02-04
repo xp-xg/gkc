@@ -84,6 +84,37 @@ const FortyFtContainerPriceKenya = () => {
             "description": "High-quality 40ft shipping containers for sale in Kenya. Perfect for large storage, offices, workshops, and commercial spaces across Kenya. Available in new and used conditions.",
             "sku": "40FT-CONTAINER-KENYA",
             "mpn": "40ft-Dry-Container",
+            "brand": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "category": "Shipping Containers",
+            "material": "Steel",
+            "color": "Standard Container Color",
+            "weight": {
+              "@type": "QuantitativeValue",
+              "value": "3700",
+              "unitCode": "KGM"
+            },
+            "depth": {
+              "@type": "QuantitativeValue",
+              "value": "40",
+              "unitCode": "FEET"
+            },
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": "8",
+              "unitCode": "FEET"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": "8.5",
+              "unitCode": "FEET"
+            },
             "offers": {
               "@type": "Offer",
               "price": "300000",
@@ -98,6 +129,16 @@ const FortyFtContainerPriceKenya = () => {
                 "price": "300000",
                 "priceCurrency": "KES",
                 "valueAddedTaxIncluded": "false"
+              },
+              "availabilityStarts": "2024-01-01",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Kenya"
+              },
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "value": "5",
+                "unitCode": "DAY"
               }
             },
             "aggregateRating": {
@@ -189,7 +230,7 @@ const FortyFtContainerPriceKenya = () => {
                       Used 40ft LC Dry Container: Starting from KSh 300,000
                     </li>
                     <li>
-                      40ft Refrigerated Container: Starting from KSh 1,500,000
+                      40ft Refrigerated Container: Starting from KSh 1,400,000
                     </li>
                     <li>
                       Used 40ft High Cube Container: Starting from KSh 300,000

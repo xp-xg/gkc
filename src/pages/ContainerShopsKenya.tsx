@@ -44,6 +44,37 @@ const ContainerShopsKenya = () => {
             "description": "Secure and durable commercial container stalls for entrepreneurs at competitive prices. Perfect for retail businesses, food vendors, service providers, and other commercial enterprises across Kenya.",
             "sku": "CONTAINER-SHOP-KENYA",
             "mpn": "COMMERCIAL-STALL-CONTAINER",
+            "brand": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "category": "Commercial Container Shops",
+            "material": "Steel",
+            "color": "Customizable Colors",
+            "weight": {
+              "@type": "QuantitativeValue",
+              "value": "2200",
+              "unitCode": "KGM"
+            },
+            "depth": {
+              "@type": "QuantitativeValue",
+              "value": "20",
+              "unitCode": "FEET"
+            },
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": "8",
+              "unitCode": "FEET"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": "8.5",
+              "unitCode": "FEET"
+            },
             "offers": {
               "@type": "Offer",
               "price": "250000",
@@ -58,6 +89,16 @@ const ContainerShopsKenya = () => {
                 "price": "250000",
                 "priceCurrency": "KES",
                 "valueAddedTaxIncluded": "false"
+              },
+              "availabilityStarts": "2024-01-01",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Kenya"
+              },
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "value": "5",
+                "unitCode": "DAY"
               }
             },
             "aggregateRating": {
@@ -191,6 +232,39 @@ const ContainerShopsKenya = () => {
                     </li>
                   </ul>
                 </div>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-primary p-6 my-8 rounded">
+                <h3 className="font-bold text-lg text-primary mb-2">Container Shop Pricing in Kenya</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white p-6 rounded-lg">
+                    <h4 className="font-bold text-lg text-center text-primary mb-4">Shop Stalls</h4>
+                    <ul className="space-y-3">
+                      <li className="flex justify-between">
+                        <span>20ft Shop Stalls (3)</span>
+                        <span className="font-bold">Conversion cost varies</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>40ft Shop Stalls (5)</span>
+                        <span className="font-bold">Conversion cost varies</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg">
+                    <h4 className="font-bold text-lg text-center text-primary mb-4">Specialized Units</h4>
+                    <ul className="space-y-3">
+                      <li className="flex justify-between">
+                        <span>20ft Ablution Block</span>
+                        <span className="font-bold">From KSh 750,000 - 800,000</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>20ft Open Office</span>
+                        <span className="font-bold">From KSh 600,000</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="mt-4 text-sm italic">Prices vary based on specifications and delivery location. Contact us for exact pricing and availability.</p>
               </div>
 
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl mb-12">

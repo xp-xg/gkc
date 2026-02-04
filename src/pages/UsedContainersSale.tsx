@@ -44,6 +44,37 @@ const UsedContainersSale = () => {
             "description": "Quality used containers for sale in Kenya from Global Kenya Containers. Affordable 20ft and 40ft containers for storage, offices, homes, and commercial use. Carefully inspected and maintained to ensure structural integrity for various applications.",
             "sku": "USED-CONTAINER-KENYA",
             "mpn": "USED-CONTAINER-KENYA",
+            "brand": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "category": "Used Shipping Containers",
+            "material": "Steel",
+            "color": "Various Container Colors",
+            "weight": {
+              "@type": "QuantitativeValue",
+              "value": "2200",
+              "unitCode": "KGM"
+            },
+            "depth": {
+              "@type": "QuantitativeValue",
+              "value": "20",
+              "unitCode": "FEET"
+            },
+            "width": {
+              "@type": "QuantitativeValue",
+              "value": "8",
+              "unitCode": "FEET"
+            },
+            "height": {
+              "@type": "QuantitativeValue",
+              "value": "8.5",
+              "unitCode": "FEET"
+            },
             "offers": {
               "@type": "Offer",
               "price": "200000",
@@ -58,6 +89,16 @@ const UsedContainersSale = () => {
                 "price": "200000",
                 "priceCurrency": "KES",
                 "valueAddedTaxIncluded": "false"
+              },
+              "availabilityStarts": "2024-01-01",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Kenya"
+              },
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "value": "3",
+                "unitCode": "DAY"
               }
             },
             "aggregateRating": {
@@ -205,7 +246,7 @@ const UsedContainersSale = () => {
                       </li>
                       <li className="flex justify-between">
                         <span>High Cube Container (Good Condition)</span>
-                        <span className="font-bold">From KSh 250,000</span>
+                        <span className="font-bold">From KSh 300,000</span>
                       </li>
                       <li className="flex justify-between">
                         <span>Basic Condition Container</span>
@@ -218,15 +259,15 @@ const UsedContainersSale = () => {
                     <ul className="space-y-3">
                       <li className="flex justify-between">
                         <span>Standard Dry Container (Good Condition)</span>
-                        <span className="font-bold">From KSh 350,000</span>
+                        <span className="font-bold">From KSh 300,000</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>LC Dry Container (Good Condition)</span>
+                        <span className="font-bold">From KSh 300,000</span>
                       </li>
                       <li className="flex justify-between">
                         <span>High Cube Container (Good Condition)</span>
-                        <span className="font-bold">From KSh 400,000</span>
-                      </li>
-                      <li className="flex justify-between">
-                        <span>Basic Condition Container</span>
-                        <span className="font-bold">From KSh 280,000</span>
+                        <span className="font-bold">From KSh 300,000</span>
                       </li>
                     </ul>
                   </div>

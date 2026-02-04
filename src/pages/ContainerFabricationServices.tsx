@@ -45,6 +45,15 @@ const ContainerFabricationServices = () => {
             "description": "Professional container fabrication services in Kenya. Expert container modification and customization services to transform standard shipping containers into functional spaces tailored to your specific needs. Services include cutting, welding, insulation, electrical work, plumbing, and interior finishing.",
             "sku": "FABRICATION-SERVICE-KENYA",
             "mpn": "CONTAINER-FABRICATION-SERVICE",
+            "brand": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "Global Kenya Containers"
+            },
+            "category": "Container Modification Services",
             "offers": {
               "@type": "Offer",
               "price": "50000",
@@ -59,6 +68,16 @@ const ContainerFabricationServices = () => {
                 "price": "50000",
                 "priceCurrency": "KES",
                 "valueAddedTaxIncluded": "false"
+              },
+              "availabilityStarts": "2024-01-01",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Kenya"
+              },
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "value": "7",
+                "unitCode": "DAY"
               }
             },
             "aggregateRating": {
@@ -128,7 +147,7 @@ const ContainerFabricationServices = () => {
                 <div className="bg-blue-50 border-l-4 border-primary p-6 my-8 rounded">
                   <h3 className="font-bold text-lg text-primary mb-2">Our Container Fabrication Services Include:</h3>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>Container cutting and welding</li>
+                    <li>Container cutting and welding - From KSh 650,000</li>
                     <li>Installation of windows and doors</li>
                     <li>Electrical and plumbing systems</li>
                     <li>Insulation and climate control</li>
