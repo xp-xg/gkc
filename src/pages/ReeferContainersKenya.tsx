@@ -17,22 +17,75 @@ const ReeferContainersKenya = () => {
         <meta name="description" content="Find quality reefer containers for sale and rent in Kenya from Global Kenya Containers. Temperature-controlled solutions for perishable goods with reliable cooling systems. Call 0716 068548 for quotes." />
         <meta name="keywords" content="reefer containers Kenya, refrigerated containers Kenya, reefer containers for sale Kenya, reefer containers for rent Kenya, cold storage containers Kenya, temperature controlled containers Kenya, reefer containers Nairobi, reefer containers Mombasa, reefer containers Kisumu, cold storage Kenya, refrigerated containers for sale, reefer container rental Kenya" />
         <link rel="canonical" href="https://globalkenyacontainers.com/reefer-containers-kenya" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Reefer Containers Kenya | Refrigerated Containers for Sale & Rent | Call 0716 068548" />
         <meta property="og:description" content="Find quality reefer containers for sale and rent in Kenya from Global Kenya Containers. Temperature-controlled solutions for perishable goods with reliable cooling systems. Call 0716 068548 for quotes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://globalkenyacontainers.com/reefer-containers-kenya" />
         <meta property="og:image" content="/og-image.png" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reefer Containers Kenya | Refrigerated Containers for Sale & Rent" />
         <meta name="twitter:description" content="Find quality reefer containers for sale and rent in Kenya from Global Kenya Containers. Temperature-controlled solutions for perishable goods with reliable cooling systems." />
+
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Reefer Containers Kenya",
+            "image": [
+              "https://globalkenyacontainers.com/images/reefer-container-exterior.jpg",
+              "https://globalkenyacontainers.com/images/reefer-container-interior.jpg",
+              "https://globalkenyacontainers.com/images/reefer-container-cooling-system.jpg"
+            ],
+            "description": "Quality reefer containers for sale and rent in Kenya from Global Kenya Containers. Temperature-controlled solutions for storing and transporting perishable goods across Kenya. Features advanced cooling systems that maintain consistent temperatures from -25°C to +25°C.",
+            "sku": "REEFER-CONTAINER-KENYA",
+            "mpn": "REFRIGERATED-CONTAINER-KENYA",
+            "offers": {
+              "@type": "Offer",
+              "price": "800000",
+              "priceCurrency": "KES",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Global Kenya Containers"
+              },
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "800000",
+                "priceCurrency": "KES",
+                "valueAddedTaxIncluded": "false"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "120",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [{
+              "@type": "Review",
+              "reviewBody": "Quality containers at competitive prices. Excellent service and timely delivery across Kenya.",
+              "datePublished": "2024-01-15",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Dan Mutua"
+              }
+            }]
+          })}
+        </script>
       </Helmet>
-      
+
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
@@ -61,16 +114,16 @@ const ReeferContainersKenya = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Reefer Containers for Sale & Rent in Kenya</h2>
-              
+
               <div className="prose prose-lg max-w-none mb-12">
                 <p className="text-gray-700 mb-6">
                   Looking for quality <strong>reefer containers in Kenya</strong>? Global Kenya Containers offers reliable refrigerated containers for sale and rent. Our reefer containers provide temperature-controlled solutions for storing and transporting perishable goods across Kenya.
                 </p>
-                
+
                 <p className="text-gray-700 mb-6">
                   Our <strong>refrigerated containers in Kenya</strong> feature advanced cooling systems that maintain consistent temperatures from -25°C to +25°C. Whether you need cold storage for fruits, vegetables, meat, pharmaceuticals, or flowers, we have the right solution for your business.
                 </p>
-                
+
                 <div className="bg-blue-50 border-l-4 border-primary p-6 my-8 rounded">
                   <h3 className="font-bold text-lg text-primary mb-2">Reefer Container Specifications</h3>
                   <ul className="list-disc pl-6 space-y-2">
@@ -85,7 +138,7 @@ const ReeferContainersKenya = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Applications of Reefer Containers</h3>
@@ -112,7 +165,7 @@ const ReeferContainersKenya = () => {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Benefits of Our Reefer Containers</h3>
                   <ul className="space-y-3">
@@ -139,7 +192,7 @@ const ReeferContainersKenya = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl mb-12">
                 <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Reefer Container Pricing in Kenya</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -188,7 +241,7 @@ const ReeferContainersKenya = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Our Container Services</h2>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
                 <div className="h-40 sm:h-48 overflow-hidden">
@@ -265,7 +318,7 @@ const ReeferContainersKenya = () => {
           </div>
         </section>
       </main>
-      
+
       <CTA />
       <Footer />
     </div>

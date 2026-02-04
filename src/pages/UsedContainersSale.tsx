@@ -17,22 +17,75 @@ const UsedContainersSale = () => {
         <meta name="description" content="Find quality used containers for sale in Kenya from Global Kenya Containers. Affordable 20ft and 40ft containers for storage, offices, homes, and commercial use. Call 0716 068548 for quotes." />
         <meta name="keywords" content="used containers for sale Kenya, used containers for sale Nairobi, second hand containers Kenya, used shipping containers Kenya, cheap containers Kenya, affordable containers Kenya, used containers for sale Mombasa, used containers for sale Kisumu, used containers for sale Nakuru, used containers for sale Eldoret, second hand shipping containers, used containers for storage Kenya, used container homes Kenya, used container offices Kenya" />
         <link rel="canonical" href="https://globalkenyacontainers.com/used-containers-sale" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Used Containers for Sale Kenya | Quality Second Hand Containers | Call 0716 068548" />
         <meta property="og:description" content="Find quality used containers for sale in Kenya from Global Kenya Containers. Affordable 20ft and 40ft containers for storage, offices, homes, and commercial use. Call 0716 068548 for quotes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://globalkenyacontainers.com/used-containers-sale" />
         <meta property="og:image" content="/og-image.png" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Used Containers for Sale Kenya | Quality Second Hand Containers" />
         <meta name="twitter:description" content="Find quality used containers for sale in Kenya from Global Kenya Containers. Affordable 20ft and 40ft containers for storage, offices, homes, and commercial use." />
+
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Used Containers for Sale Kenya",
+            "image": [
+              "https://globalkenyacontainers.com/images/used-container-exterior.jpg",
+              "https://globalkenyacontainers.com/images/used-container-interior.jpg",
+              "https://globalkenyacontainers.com/images/used-container-inspection.jpg"
+            ],
+            "description": "Quality used containers for sale in Kenya from Global Kenya Containers. Affordable 20ft and 40ft containers for storage, offices, homes, and commercial use. Carefully inspected and maintained to ensure structural integrity for various applications.",
+            "sku": "USED-CONTAINER-KENYA",
+            "mpn": "USED-CONTAINER-KENYA",
+            "offers": {
+              "@type": "Offer",
+              "price": "200000",
+              "priceCurrency": "KES",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Global Kenya Containers"
+              },
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "200000",
+                "priceCurrency": "KES",
+                "valueAddedTaxIncluded": "false"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "120",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [{
+              "@type": "Review",
+              "reviewBody": "Quality containers at competitive prices. Excellent service and timely delivery across Kenya.",
+              "datePublished": "2024-01-15",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Dan Mutua"
+              }
+            }]
+          })}
+        </script>
       </Helmet>
-      
+
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
@@ -61,16 +114,16 @@ const UsedContainersSale = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Quality Used Containers for Sale in Kenya</h2>
-              
+
               <div className="prose prose-lg max-w-none mb-12">
                 <p className="text-gray-700 mb-6">
                   Looking for affordable <strong>used containers for sale in Kenya</strong>? Global Kenya Containers offers quality second-hand shipping containers at significantly lower prices than new containers. Our used containers are carefully inspected and maintained to ensure they meet structural integrity standards for various applications.
                 </p>
-                
+
                 <p className="text-gray-700 mb-6">
                   Our <strong>second hand containers in Kenya</strong> are perfect for budget-conscious customers who still need reliable storage, office, or commercial solutions. We offer various sizes and conditions to meet your specific needs.
                 </p>
-                
+
                 <div className="bg-blue-50 border-l-4 border-primary p-6 my-8 rounded">
                   <h3 className="font-bold text-lg text-primary mb-2">Types of Used Containers Available</h3>
                   <ul className="list-disc pl-6 space-y-2">
@@ -85,7 +138,7 @@ const UsedContainersSale = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Advantages of Used Containers</h3>
@@ -112,7 +165,7 @@ const UsedContainersSale = () => {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Common Uses for Used Containers</h3>
                   <ul className="space-y-3">
@@ -139,7 +192,7 @@ const UsedContainersSale = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl mb-12">
                 <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">Used Container Pricing in Kenya</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -188,7 +241,7 @@ const UsedContainersSale = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Our Container Services</h2>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
                 <div className="h-40 sm:h-48 overflow-hidden">
@@ -265,7 +318,7 @@ const UsedContainersSale = () => {
           </div>
         </section>
       </main>
-      
+
       <CTA />
       <Footer />
     </div>

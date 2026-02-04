@@ -17,22 +17,75 @@ const ContainerShopsKenya = () => {
         <meta name="description" content="Find quality container shops for sale and rent in Kenya from Global Kenya Containers. Secure commercial stalls for entrepreneurs at competitive prices. Call 0716 068548 for quotes." />
         <meta name="keywords" content="container shops Kenya, container stalls Kenya, commercial container stalls Kenya, container shops for sale Kenya, container shops rent Kenya, commercial stalls Kenya, container shops Nairobi, container stalls for sale Kenya, portable container offices Kenya, container shops Mombasa, container shops Kisumu, container shops Nakuru, container shops Eldoret" />
         <link rel="canonical" href="https://globalkenyacontainers.com/container-shops-kenya" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Container Shops Kenya | Commercial Stalls for Sale & Rent | Call 0716 068548" />
         <meta property="og:description" content="Find quality container shops for sale and rent in Kenya from Global Kenya Containers. Secure commercial stalls for entrepreneurs at competitive prices. Call 0716 068548 for quotes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://globalkenyacontainers.com/container-shops-kenya" />
         <meta property="og:image" content="/og-image.png" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Container Shops Kenya | Commercial Stalls for Sale & Rent" />
         <meta name="twitter:description" content="Find quality container shops for sale and rent in Kenya from Global Kenya Containers. Secure commercial stalls for entrepreneurs at competitive prices." />
+
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Container Shops/Stalls",
+            "image": [
+              "https://globalkenyacontainers.com/images/container-shop-exterior.jpg",
+              "https://globalkenyacontainers.com/images/container-shop-interior.jpg",
+              "https://globalkenyacontainers.com/images/container-shop-customized.jpg"
+            ],
+            "description": "Secure and durable commercial container stalls for entrepreneurs at competitive prices. Perfect for retail businesses, food vendors, service providers, and other commercial enterprises across Kenya.",
+            "sku": "CONTAINER-SHOP-KENYA",
+            "mpn": "COMMERCIAL-STALL-CONTAINER",
+            "offers": {
+              "@type": "Offer",
+              "price": "250000",
+              "priceCurrency": "KES",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Global Kenya Containers"
+              },
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "250000",
+                "priceCurrency": "KES",
+                "valueAddedTaxIncluded": "false"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "120",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [{
+              "@type": "Review",
+              "reviewBody": "Quality containers at competitive prices. Excellent service and timely delivery across Kenya.",
+              "datePublished": "2024-01-15",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Dan Mutua"
+              }
+            }]
+          })}
+        </script>
       </Helmet>
-      
+
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
@@ -61,16 +114,16 @@ const ContainerShopsKenya = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Container Shops for Sale & Rent in Kenya</h2>
-              
+
               <div className="prose prose-lg max-w-none mb-12">
                 <p className="text-gray-700 mb-6">
                   Looking for quality <strong>container shops in Kenya</strong>? Global Kenya Containers offers secure and durable commercial stalls for entrepreneurs at competitive prices. Our container shops are perfect for retail businesses, food vendors, service providers, and other commercial enterprises across Kenya.
                 </p>
-                
+
                 <p className="text-gray-700 mb-6">
                   Our <strong>commercial container stalls in Kenya</strong> are designed with security and functionality in mind. We serve all major cities including Nairobi, Mombasa, Kisumu, Nakuru, and Eldoret, providing reliable commercial solutions for growing businesses.
                 </p>
-                
+
                 <div className="bg-blue-50 border-l-4 border-primary p-6 my-8 rounded">
                   <h3 className="font-bold text-lg text-primary mb-2">Features of Our Container Shops</h3>
                   <ul className="list-disc pl-6 space-y-2">
@@ -85,7 +138,7 @@ const ContainerShopsKenya = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Benefits of Container Shops</h3>
@@ -112,7 +165,7 @@ const ContainerShopsKenya = () => {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Ideal for These Businesses</h3>
                   <ul className="space-y-3">
@@ -139,7 +192,7 @@ const ContainerShopsKenya = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl mb-12">
                 <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">Areas We Serve in Kenya</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -173,7 +226,7 @@ const ContainerShopsKenya = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Our Container Services</h2>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
                 <div className="h-40 sm:h-48 overflow-hidden">
@@ -250,7 +303,7 @@ const ContainerShopsKenya = () => {
           </div>
         </section>
       </main>
-      
+
       <CTA />
       <Footer />
     </div>

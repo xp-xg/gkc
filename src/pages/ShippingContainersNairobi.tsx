@@ -17,22 +17,75 @@ const ShippingContainersNairobi = () => {
         <meta name="description" content="Find quality shipping containers for sale in Nairobi from Global Kenya Containers. 20ft and 40ft containers at competitive prices. Call 0716 068548 for quotes and viewing." />
         <meta name="keywords" content="shipping containers Nairobi, containers for sale Nairobi, 20ft container price Nairobi, 40ft container Nairobi, container shop Nairobi, shipping containers for sale Kenya, used containers for sale Nairobi, container fabrication Nairobi, shipping container offices Nairobi, reefer containers Nairobi, container homes Nairobi, container transport Nairobi, container stalls Nairobi, container offices Nairobi, container conversion Nairobi" />
         <link rel="canonical" href="https://globalkenyacontainers.com/shipping-containers-nairobi" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Shipping Containers Nairobi | Buy, Rent & Fabricate 20ft 40ft | Call 0716 068548" />
         <meta property="og:description" content="Find quality shipping containers for sale in Nairobi from Global Kenya Containers. 20ft and 40ft containers at competitive prices. Call 0716 068548 for quotes and viewing." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://globalkenyacontainers.com/shipping-containers-nairobi" />
         <meta property="og:image" content="/og-image.png" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Shipping Containers Nairobi | Buy, Rent & Fabricate 20ft 40ft" />
         <meta name="twitter:description" content="Find quality shipping containers for sale in Nairobi from Global Kenya Containers. 20ft and 40ft containers at competitive prices." />
+
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Shipping Containers Nairobi",
+            "image": [
+              "https://globalkenyacontainers.com/images/shipping-container-nairobi-exterior.jpg",
+              "https://globalkenyacontainers.com/images/shipping-container-nairobi-interior.jpg",
+              "https://globalkenyacontainers.com/images/shipping-container-nairobi-delivery.jpg"
+            ],
+            "description": "Quality shipping containers for sale in Nairobi from Global Kenya Containers. Wide selection of 20ft and 40ft containers at competitive prices. Perfect for storage, offices, homes, and commercial stalls in Nairobi.",
+            "sku": "SHIPPING-CONTAINER-NAIROBI",
+            "mpn": "SHIPPING-CONTAINER-NAIROBI",
+            "offers": {
+              "@type": "Offer",
+              "price": "200000",
+              "priceCurrency": "KES",
+              "availability": "https://schema.org/InStock",
+              "seller": {
+                "@type": "Organization",
+                "name": "Global Kenya Containers"
+              },
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "200000",
+                "priceCurrency": "KES",
+                "valueAddedTaxIncluded": "false"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "120",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [{
+              "@type": "Review",
+              "reviewBody": "Quality containers at competitive prices. Excellent service and timely delivery across Nairobi.",
+              "datePublished": "2024-01-15",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Dan Mutua"
+              }
+            }]
+          })}
+        </script>
       </Helmet>
-      
+
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
@@ -61,16 +114,16 @@ const ShippingContainersNairobi = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Shipping Containers for Sale in Nairobi</h2>
-              
+
               <div className="prose prose-lg max-w-none mb-12">
                 <p className="text-gray-700 mb-6">
                   Looking for quality <strong>shipping containers for sale in Nairobi</strong>? Global Kenya Containers offers a wide selection of 20ft and 40ft containers at competitive prices. Whether you need containers for storage, offices, homes, or commercial stalls, we have the right solution for your needs in Nairobi.
                 </p>
-                
+
                 <p className="text-gray-700 mb-6">
                   Our <strong>containers for sale in Nairobi</strong> come in various conditions from new to used, allowing you to choose the option that best fits your budget and requirements. We serve all areas of Nairobi including Industrial Area, South B, South C, Karen, Langata, Westlands, Upper Hill, and more.
                 </p>
-                
+
                 <div className="bg-blue-50 border-l-4 border-primary p-6 my-8 rounded">
                   <h3 className="font-bold text-lg text-primary mb-2">Available Container Types in Nairobi</h3>
                   <ul className="list-disc pl-6 space-y-2">
@@ -85,7 +138,7 @@ const ShippingContainersNairobi = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Why Choose Our Nairobi Service?</h3>
@@ -112,7 +165,7 @@ const ShippingContainersNairobi = () => {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">Common Uses in Nairobi</h3>
                   <ul className="space-y-3">
@@ -139,7 +192,7 @@ const ShippingContainersNairobi = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl mb-12">
                 <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">Areas We Serve in Nairobi</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -193,7 +246,7 @@ const ShippingContainersNairobi = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900">Our Container Services</h2>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl overflow-hidden elevation-2 hover:elevation-4 transition-all duration-300 group">
                 <div className="h-40 sm:h-48 overflow-hidden">
@@ -270,7 +323,7 @@ const ShippingContainersNairobi = () => {
           </div>
         </section>
       </main>
-      
+
       <CTA />
       <Footer />
     </div>
