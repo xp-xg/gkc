@@ -176,6 +176,15 @@ export function ContactForm() {
 
     const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${encodeURIComponent(body)}`;
 
+    // Track form submission event in GA4
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'form_submission', {
+        'event_category': 'contact',
+        'event_label': values.subject,
+        'product_interest': values.product || 'none'
+      });
+    }
+
     // Open the user's default email client
     window.location.href = mailtoLink;
 
