@@ -57,9 +57,14 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-gray-500 dark:text-gray-400" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:info@globalkenyacontainers.com" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
-                      info@globalkenyacontainers.com
-                    </a>
+                    <div className="flex flex-col gap-1">
+                      <a href="mailto:globalkenyacontainers@gmail.com" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+                        globalkenyacontainers@gmail.com
+                      </a>
+                      <a href="mailto:info@globalkenyacontainers.com" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+                        info@globalkenyacontainers.com
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

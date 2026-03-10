@@ -56,7 +56,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="mailto:info@globalkenyacontainers.com"
+                href="mailto:globalkenyacontainers@gmail.com"
                 className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-600 hover:from-accent hover:to-primary rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-accent/30"
               >
                 <Mail className="w-5 h-5" />
@@ -145,9 +145,12 @@ const Footer = () => {
                 <Phone className="w-5 h-5 mr-3 text-accent flex-shrink-0" />
                 <span>+254721804377</span>
               </li>
-              <li className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 text-accent flex-shrink-0" />
-                <span>info@globalkenyacontainers.com</span>
+              <li className="flex items-start">
+                <Mail className="w-5 h-5 mr-3 mt-1 text-accent flex-shrink-0" />
+                <div className="flex flex-col">
+                  <span>globalkenyacontainers@gmail.com</span>
+                  <span>info@globalkenyacontainers.com</span>
+                </div>
               </li>
             </ul>
           </div>

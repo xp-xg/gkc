@@ -163,7 +163,7 @@ export function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
 
-    const recipientEmail = "info@globalkenyacontainers.com"; // Your company's email
+    const recipientEmail = "globalkenyacontainers@gmail.com"; // Your company's email
     const subject = encodeURIComponent(values.subject);
 
     let body = `Name: ${values.name}\n`;
